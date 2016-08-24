@@ -1,0 +1,1586 @@
+<?xml version="1.0"?>
+<doc>
+    <assembly>
+        <name>GHIElectronics.NETMF.Net</name>
+    </assembly>
+    <members>
+        <member name="T:GHIElectronics.NETMF.Net.SecurityMode">
+            <summary>
+            WiFi Security Mode
+            </summary>
+        </member>
+        <member name="F:GHIElectronics.NETMF.Net.SecurityMode.Open">
+            <summary>
+            Open, No security or encryption
+            </summary>
+        </member>
+        <member name="F:GHIElectronics.NETMF.Net.SecurityMode.WPA">
+            <summary>
+            WPA, Wi-Fi Protected Access II 
+            </summary>
+        </member>
+        <member name="F:GHIElectronics.NETMF.Net.SecurityMode.WPA2">
+            <summary>
+            WPA2, Wi-Fi Protected Access II 
+            </summary>
+        </member>
+        <member name="F:GHIElectronics.NETMF.Net.SecurityMode.WEP">
+            <summary>
+            WEP, Wired Equivalent Privacy 
+            </summary>
+        </member>
+        <member name="T:GHIElectronics.NETMF.Net.NetworkType">
+            <summary>
+            WiFi Netwrok Type
+            </summary>
+        </member>
+        <member name="F:GHIElectronics.NETMF.Net.NetworkType.AdHoc">
+            <summary>
+            Ad-Hoc (IBSS).
+            </summary>
+        </member>
+        <member name="F:GHIElectronics.NETMF.Net.NetworkType.AccessPoint">
+            <summary>
+            Wirless Access Point (Infrastructure).
+            </summary>
+        </member>
+        <member name="T:GHIElectronics.NETMF.Net.WiFiNetworkInfo">
+            <summary>
+            WiFi Network Information. 
+            </summary>
+        </member>
+        <member name="F:GHIElectronics.NETMF.Net.WiFiNetworkInfo.ChannelNumber">
+            <summary>
+            Channel Number.
+            </summary>
+        </member>
+        <member name="F:GHIElectronics.NETMF.Net.WiFiNetworkInfo.SecMode">
+            <summary>
+            Security Mode
+            </summary>
+        </member>
+        <member name="F:GHIElectronics.NETMF.Net.WiFiNetworkInfo.RSSI">
+            <summary>
+            Received signal strength indication in -dB unit
+            </summary>
+        </member>
+        <member name="F:GHIElectronics.NETMF.Net.WiFiNetworkInfo.SSID">
+            <summary>
+            Service set identifier (the wifi netwrok name)
+            </summary>
+        </member>
+        <member name="F:GHIElectronics.NETMF.Net.WiFiNetworkInfo.networkType">
+            <summary>
+            Netwrok Type
+            </summary>
+        </member>
+        <member name="F:GHIElectronics.NETMF.Net.WiFiNetworkInfo.PhysicalAddress">
+            <summary>
+            Base station's MAC address.
+            </summary>
+        </member>
+        <member name="M:GHIElectronics.NETMF.Net.WiFiNetworkInfo.#ctor">
+            <summary>
+            AccessPointInfo Constructor.
+            </summary>
+        </member>
+        <member name="M:GHIElectronics.NETMF.Net.WiFiNetworkInfo.#ctor(System.UInt32,GHIElectronics.NETMF.Net.SecurityMode,System.String,GHIElectronics.NETMF.Net.NetworkType)">
+            <summary>
+            WiFiNetworkInfo Constructor.
+            </summary>
+            <param name="channelno">Channel Number, 0 = Auto</param>
+            <param name="security">Security Mode</param>
+            <param name="ssid">Service set identifier (The wifi netwrok name)</param>
+            <param name="type">Network Type</param>
+        </member>
+        <member name="T:GHIElectronics.NETMF.Net.WiFi">
+             <summary>
+             This class provides setup features to control the WiFi connections.
+             </summary>
+             <remarks>
+             <strong>THE FOLLOWING DESCRIPTION APPLIES ONLY to RS9110_N_11_21_1_Compatible MODULES. IT DOES NOT APPLY on ZG100M_Compatible MODULES:<br/>---------------------------START-------------------------------<br/></strong>
+             <strong>Important note:</strong> Currently TCP/IP stack can handle only one network interface at the same time.
+             For instance, if WiFi is enabled,Ethernet and PPP will be unhooked from the TCP/IP stack.<br/>
+             This class fully supports RS9110_N_11_21_1_Compatible modules.
+             Network availability event handler is also available through <c>Microsoft.SPOT.Net.NetworkInformation.NetworkChange</c> class that reports when the WiFi connection is up or down. The even handler should be assigned after WiFi.Enable()<br/>
+             <strong>---------------------------END-------------------------------<br/>THE FOLLOWING DESCRIPTION APPLIES ONLY to ZG100M_Compatible MODULES:<br/>---------------------------START-------------------------------<br/></strong>
+             ZG100M_Compatible is an old wifi solution with GHI NETMF device. This is replaced with the better solution RS9110_N_11_21_1_Compatible.
+             ZG100M_Compatible support will be dropped soon and it is not recommended for new designs.<br/>
+             Supported WiFi Class members are: Enable() Disable() ONLY. Other class members are used only with RS9110_N_11_21_1_Compatible modules.
+             <strong>Important note:</strong> Currently TCP/IP stack can handle only one network interface at the same time.
+             For instance, if WiFi is enabled,Ethernet and PPP will be unhooked with the TCP/IP stack.<br/>
+             <br/>
+             Other general WiFi settings are available through the following classes:<br/>
+             <c>Microsoft.SPOT.Net.NetworkInformation</c><br/>
+             <c>Microsoft.SPOT.Net.NetworkInformation.NetworkInterface</c><br/>
+             <c>Microsoft.SPOT.Net.NetworkInformation.Wireless80211</c><br/>
+             <br/>
+             Supported WiFi Settings:<br/>
+             1. <strong>Radio:</strong> 801.11b<br/>
+             2. <strong>SSID:</strong> string<br/>
+             3. <strong>Authentication:</strong> None, Open or Shared.<br/>
+             4. <strong>Encryption:</strong><br/>
+                 <br/>
+                 <strong>WEP:</strong> Use only the first Network Key.<br/>
+                 64-Bit:<br/>
+                     MaxNetworkKeyLength = 8 bytes (64-Bit in MFDeploy)<br/>
+                     NetworkKey: 5 Bytes. (11 Hex digits in MFDeploy)<br/>
+                 128-Bit:<br/>
+                     MaxNetworkKeyLength = 16 bytes (64-Bit in MFDeploy)<br/>
+                     NetworkKey: 13 Bytes. (26 Hex digits in MFDeploy)<br/>
+                 <br/>
+                 <strong>WPA or WPA2:</strong><br/>
+                 Passphrase: string<br/>
+                 <br/>
+                 <strong>WPA-PSK:</strong> Fill in pre-calculated 256-bit PSK:<br/>
+                 You may use this tool as an example to calculate PSK:<br/>
+                 <a href=" http://www.wireshark.org/tools/wpa-psk.html">256-bit PSK calculator.</a><br/>
+                 MaxNetworkKeyLength = 32 bytes (256-Bit in MFDeploy)<br/>
+                 NetworkKey: 32 Bytes. (64 Hex digits in MFDeploy)
+             <strong>---------------------------END-------------------------------<br/></strong>
+            </remarks>
+               
+                 
+             <example>
+             Redpine Signals RS9110_N_11_21_1_Compatible Wifi module:This example enables WiFi Interface, Searchs for networks and join a specific network (AP or Ad-Hoc) and retrieves an IP address lease from DHCP server.
+             <code>
+<![CDATA[
+/// Add these libraries to your project's References
+/// System
+/// Microsoft.SPOT.Hardware
+/// Microsoft.SPOT.Net
+/// GHIElectronics.NETMF.System
+/// GHIElectronics.NETMF.Net
+using System;
+using System.Threading;
+using System.Net.Sockets;
+using System.Net;
+using Microsoft.SPOT;
+using Microsoft.SPOT.Net.NetworkInformation;
+using Microsoft.SPOT.Hardware;
+using GHIElectronics.NETMF.Net;
+using GHIElectronics.NETMF.Hardware;
+
+
+    public class Program
+    {
+        
+        static public ManualResetEvent wait = new ManualResetEvent(false);
+        static public string myWiFiNetworkSSID = "linksys1";
+        static public string PassPhrase = "hellopass";
+        public static void Main()
+        {
+            //ChipworkX Developement System V1.5 UEXT header with WiFi RS21 Module: P/N:GHI-WIFIEXP2-298
+            //SPI.SPI_module _spi = SPI.SPI_module.SPI2; /*SPI bus*/
+            //Cpu.Pin _cs = ChipworkX.Pin.PC9; /*ChipSelect*/
+            //Cpu.Pin _ExtInt = ChipworkX.Pin.PA19; /*External Interrupt*/
+            //Cpu.Pin _reset = ChipworkX.Pin.PC8; /*Reset*/
+            /*-------------------------------------------------------------------*/
+            //EMX Developement System V1.3 UEXT header with WiFi RS21 Module: P/N:GHI-WIFIEXP2-298
+            SPI.SPI_module _spi = SPI.SPI_module.SPI1; /*SPI bus*/
+            Cpu.Pin _cs = EMX.Pin.IO2; /*ChipSelect*/
+            Cpu.Pin _ExtInt = EMX.Pin.IO26; /*External Interrupt*/
+            Cpu.Pin _reset = EMX.Pin.IO3; /*Reset*/
+            /*-------------------------------------------------------------------*/
+            //FEZ Cobra OEM board V1.2 or V1.3 UEXT header with WiFi RS21 Module: P/N:GHI-WIFIEXP2-298
+            //SPI.SPI_module _spi = SPI.SPI_module.SPI2; /*SPI bus*/
+            //Cpu.Pin _cs = EMX.Pin.IO2; /*ChipSelect*/
+            //Cpu.Pin _ExtInt = EMX.Pin.IO26; /*External Interrupt*/
+            //Cpu.Pin _reset = EMX.Pin.IO3; /*Reset*/
+            /*-------------------------------------------------------------------*/
+
+            Debug.Print("Enable WiFi RS2 module");
+
+            try
+            {
+                //ChipworkX Developement System UEXT header with WiFi RS21 Module: P/N:GHI-WIFIEXP2-298
+                WiFi.Enable(WiFi.HardwareModule.RS9110_N_11_21_1_Compatible,
+                            _spi,/*SPI bus*/
+                            _cs,  /*ChipSelect*/
+                            _ExtInt, /*External Interrupt*/
+                            _reset); /*Reset*/
+            }
+            catch (WiFi.WiFiException e)
+            {
+                if (e.errorCode == WiFi.WiFiException.ErrorCode.HardwareCommunicationFailure ||
+                    e.errorCode == WiFi.WiFiException.ErrorCode.HardwareFirmwareVersionMismatch)
+                {
+                    //ChipworkX Developement System UEXT header with WiFi RS21 Module: P/N:GHI-WIFIEXP2-298
+                    WiFi.UpdateFirmware(WiFi.HardwareModule.RS9110_N_11_21_1_Compatible,
+                                        _spi,/*SPI bus*/
+                                        _cs,  /*ChipSelect*/
+                                        _ExtInt, /*External Interrupt*/
+                                        _reset); /*Reset*/
+                    WiFi.Enable(WiFi.HardwareModule.RS9110_N_11_21_1_Compatible,
+                                 _spi,/*SPI bus*/
+                                 _cs,  /*ChipSelect*/
+                                 _ExtInt, /*External Interrupt*/
+                                 _reset); /*Reset*/
+                }
+                else if (e.errorCode == WiFi.WiFiException.ErrorCode.HardwareCommunicationFailure)
+                {
+                    Debug.Print("Error Message: " + e.ErrorMsg);
+                    Debug.Print("Check WiFi module hardware connections and SPI/signals configurations.");
+                    throw;
+                }
+            }
+
+            if (WiFi.IsEnabled)
+                Debug.Print("Enabled Successfully. At this point, the on-board LED on RS9110_N_11_21_1_Compatible module is ON.");
+            else
+                throw new Exception();
+
+            // This event handler checks netowrk avaialblty (Ethernet, WiFi and PPP).
+            NetworkChange.NetworkAvailabilityChanged += new NetworkAvailabilityChangedEventHandler(NetworkChange_NetworkAvailabilityChanged);
+
+            Debug.Print("Searching for WiFi APs");
+            WiFiNetworkInfo[] ScanResp = WiFi.Scan();
+            if (ScanResp != null)
+            {
+                Debug.Print("Total Available Networks are " + ScanResp.Length.ToString());
+                foreach (WiFiNetworkInfo x in ScanResp)
+                {
+                    Debug.Print(WiFiNetworkInfoToString(x));
+                    Debug.Print("-----------------------------------------------------");
+                }
+            }
+
+            // Check if myWiFiNetworkSSID one of the found networks.
+            int i = 0;
+            for (i = 0; i < ScanResp.Length; i++)
+            {
+                if (string.Compare(ScanResp[i].SSID, myWiFiNetworkSSID) == 0)
+                {
+                    break;
+                }
+            }
+            if (i >= ScanResp.Length)
+            {
+                Debug.Print("The netwrok you are looking for is not there");
+                throw new Exception();
+            }
+            else
+            {
+                for(int count = 0; count <3; count++)
+                {
+
+                    Debug.Print("Connecting to " + ScanResp[i].SSID);
+                    wait.Reset();
+                    try
+                    {
+                        WiFi.Join(ScanResp[i], PassPhrase);
+                    }
+                    catch (WiFi.WiFiException e)
+                    {
+                        switch (e.errorCode)
+                        {
+                            case WiFi.WiFiException.ErrorCode.AuthenticationFailed:
+                                Debug.Print("AuthenticationFailed");
+                                break;
+                            default:
+                                Debug.Print(e.errorCode.ToString());
+                                break;
+                        }
+                        Debug.Print("Error Message: " + e.ErrorMsg);
+                        throw;
+                    }
+                    Debug.Print("Done connecting");
+
+                    wait.WaitOne();
+
+                    Debug.Print("We got NetworkAvailable event .WiFi link is ready!");
+
+                    Debug.Print("Enable DHCP");
+                    try
+                    {
+                        NetworkInterface[] netif = NetworkInterface.GetAllNetworkInterfaces();
+
+                        // Static IP
+                        /*****************************/
+                        //netif[0].EnableStaticIP("192.168.137.2", "255.255.255.0", "192.168.137.1");
+                        //netif[0].EnableStaticDns(new string[] { "10.1.10.1" });
+
+                        // Dynamic IP
+                        /*****************************/
+                        if (!netif[0].IsDhcpEnabled)
+                            netif[0].EnableDhcp();// This function is blocking
+                        else
+                        {
+                            netif[0].RenewDhcpLease();// This function is blocking
+                        }
+                        Debug.Print("Network settings:");
+                        Debug.Print("IP Address: " + netif[0].IPAddress);
+                        Debug.Print("Subnet Mask: " + netif[0].SubnetMask);
+                        Debug.Print("Default Getway: " + netif[0].GatewayAddress);
+                        Debug.Print("DNS Server: " + netif[0].DnsAddresses[0]);
+                    }
+                    catch (SocketException e)
+                    {
+                        Debug.Print("DHCP Faild");
+                        if (e.ErrorCode == 11003)
+                            Debug.Print("Re-Enable the module.");
+
+                        throw;
+                    }
+                    Debug.Print("Test DNS");
+                    try
+                    {
+                        IPHostEntry myIP = Dns.GetHostEntry("www.ghielectronics.com");
+
+                        if (myIP != null)
+                        {
+                            Debug.Print(myIP.HostName + ": " + myIP.AddressList[0].ToString());
+                        }
+                    }
+                    catch (SocketException e)
+                    {
+                        Debug.Print("Faild to Get the host entry of the FQN from DNS server!");
+                        if (e.ErrorCode == 11003)
+                            Debug.Print("Re-Enable the module.");
+                        throw;
+                    }
+
+                    Debug.Print("Disconnect WiFi link.");
+                    wait.Reset();
+                    WiFi.Disconnect();
+                    wait.WaitOne();
+                    Thread.Sleep(1000);
+                }
+                Debug.Print("Disable WiFi interface");
+                WiFi.Disable();
+                // At this point networkintrface is back to Ethernet.
+                Debug.Print("The End of Test");
+                Thread.Sleep(Timeout.Infinite);
+            }
+
+        }
+        /// <summary>
+        /// WiFiNetworkInfo to String
+        /// </summary>
+        /// <param name="info">WiFiNetworkInfo</param>
+        /// <returns>string</returns>
+        static string WiFiNetworkInfoToString(WiFiNetworkInfo info)
+        {
+            string str;
+            str = "SSID: " + info.SSID +"\n";
+            str += "Channel Number: " + info.ChannelNumber + "\n";
+            str += "RSSI: -" + info.RSSI + "dB" + "\n";
+            str += "Security Mode: ";
+            switch (info.SecMode)
+            {
+                case SecurityMode.Open:
+                    str += "Open";
+                    break;
+                case SecurityMode.WEP:
+                    str += "WEP";
+                    break;
+                case SecurityMode.WPA:
+                    str += "WPA";
+                    break;
+                case SecurityMode.WPA2:
+                    str += "WPA2";
+                    break;
+            }
+            str += "\n";
+            str += "Network Type: ";
+            switch (info.networkType)
+            {
+                case NetworkType.AccessPoint:
+                    str += "Access Point";
+                    break;
+                case NetworkType.AdHoc:
+                    str += "AdHoc";
+                    break;
+            }
+            str += "\n";
+            str += "BS MAC: "   + Auxiliary.ByteToHex(info.PhysicalAddress[0]) + "-"
+                                + Auxiliary.ByteToHex(info.PhysicalAddress[1]) + "-"
+                                + Auxiliary.ByteToHex(info.PhysicalAddress[2]) + "-"
+                                + Auxiliary.ByteToHex(info.PhysicalAddress[3]) + "-"
+                                + Auxiliary.ByteToHex(info.PhysicalAddress[4]) + "-"
+                                + Auxiliary.ByteToHex(info.PhysicalAddress[5]) + "\n";
+            return str;
+        }
+
+
+        
+        static void NetworkChange_NetworkAvailabilityChanged(object sender, NetworkAvailabilityEventArgs e)
+        {
+            Debug.Print("Network Availability Event Triggered");
+            if (e.IsAvailable)
+            {
+                if (WiFi.IsEnabled)// Make sure that the event is fired by WiFi interface, not other networking interface.
+                if (WiFi.IsLinkConnected)
+                {
+                    wait.Set();
+                    Debug.Print("WiFi connection was established!");
+                }
+            }
+            else
+            {
+                if (WiFi.IsEnabled)// Make sure that the event is fired by WiFi interface, not other networking interface.
+                if (!WiFi.IsLinkConnected) 
+                {
+                    wait.Set();
+                    Debug.Print("WiFi connection was dropped or disconnected!");
+                }
+            }
+        }
+    }
+    /// <summary>
+    /// Auxiliary class.
+    /// </summary>
+    public static class Auxiliary
+    {
+        /// <summary>
+        /// Convert Byte to HEX string.
+        /// </summary>
+        /// <param name="number">number</param>
+        /// <returns>HEX in a string</returns>
+        public static string ByteToHex(byte number)
+        {
+            string hex = "0123456789ABCDEF";
+            return new string(new char[] { hex[(number & 0xF0) >> 4], hex[number & 0x0F] });
+        }
+    }
+
+
+]]>
+</code>
+             </example>
+             <example>
+             Redpine Signals RS9110_N_11_21_1_Compatible Wifi module:This example enables WiFi Interface, Starts Ad-Hoc Host (Open or with WEP Security. WPA/WPA2 with Ad-Hoc is not supported).
+             <code>
+<![CDATA[
+/// Add these libraries to your project's References
+/// System
+/// Microsoft.SPOT.Hardware
+/// Microsoft.SPOT.Net
+/// GHIElectronics.NETMF.System
+/// GHIElectronics.NETMF.Net
+using System;
+using System.Threading;
+using System.Net.Sockets;
+using System.Net;
+using Microsoft.SPOT;
+using Microsoft.SPOT.Net.NetworkInformation;
+using Microsoft.SPOT.Hardware;
+using GHIElectronics.NETMF.Net;
+using GHIElectronics.NETMF.Hardware;
+
+    public class Program
+    {
+
+        public static void Main()
+        {
+            //ChipworkX Developement System V1.5 UEXT header with WiFi RS21 Module: P/N:GHI-WIFIEXP2-298
+            //SPI.SPI_module _spi = SPI.SPI_module.SPI2; /*SPI bus*/
+            //Cpu.Pin _cs = ChipworkX.Pin.PC9; /*ChipSelect*/
+            //Cpu.Pin _ExtInt = ChipworkX.Pin.PA19; /*External Interrupt*/
+            //Cpu.Pin _reset = ChipworkX.Pin.PC8; /*Reset*/
+            /*-------------------------------------------------------------------*/
+            //EMX Developement System V1.3 UEXT header with WiFi RS21 Module: P/N:GHI-WIFIEXP2-298
+            SPI.SPI_module _spi = SPI.SPI_module.SPI1; /*SPI bus*/
+            Cpu.Pin _cs = EMX.Pin.IO2; /*ChipSelect*/
+            Cpu.Pin _ExtInt = EMX.Pin.IO26; /*External Interrupt*/
+            Cpu.Pin _reset = EMX.Pin.IO3; /*Reset*/
+            /*-------------------------------------------------------------------*/
+            //FEZ Cobra OEM board V1.2 or V1.3 UEXT header with WiFi RS21 Module: P/N:GHI-WIFIEXP2-298
+            //SPI.SPI_module _spi = SPI.SPI_module.SPI2; /*SPI bus*/
+            //Cpu.Pin _cs = EMX.Pin.IO2; /*ChipSelect*/
+            //Cpu.Pin _ExtInt = EMX.Pin.IO26; /*External Interrupt*/
+            //Cpu.Pin _reset = EMX.Pin.IO3; /*Reset*/
+            /*-------------------------------------------------------------------*/
+
+            Debug.Print("Enable WiFi RS2 module");
+
+            try
+            {
+                //ChipworkX Developement System UEXT header with WiFi RS21 Module: P/N:GHI-WIFIEXP2-298
+                WiFi.Enable(WiFi.HardwareModule.RS9110_N_11_21_1_Compatible,
+                            _spi,/*SPI bus*/
+                            _cs,  /*ChipSelect*/
+                            _ExtInt, /*External Interrupt*/
+                            _reset); /*Reset*/
+            }
+            catch (WiFi.WiFiException e)
+            {
+                if (e.errorCode == WiFi.WiFiException.ErrorCode.HardwareCommunicationFailure ||
+                    e.errorCode == WiFi.WiFiException.ErrorCode.HardwareFirmwareVersionMismatch)
+                {
+                    //ChipworkX Developement System UEXT header with WiFi RS21 Module: P/N:GHI-WIFIEXP2-298
+                    WiFi.UpdateFirmware(WiFi.HardwareModule.RS9110_N_11_21_1_Compatible,
+                                        _spi,/*SPI bus*/
+                                        _cs,  /*ChipSelect*/
+                                        _ExtInt, /*External Interrupt*/
+                                        _reset); /*Reset*/
+                    WiFi.Enable(WiFi.HardwareModule.RS9110_N_11_21_1_Compatible,
+                                 _spi,/*SPI bus*/
+                                 _cs,  /*ChipSelect*/
+                                 _ExtInt, /*External Interrupt*/
+                                 _reset); /*Reset*/
+                }
+                else if (e.errorCode == WiFi.WiFiException.ErrorCode.HardwareCommunicationFailure)
+                {
+                    Debug.Print("Error Message: " + e.ErrorMsg);
+                    Debug.Print("Check WiFi module hardware connections and SPI/signals configurations.");
+                    throw;
+                }
+            }
+
+            if (WiFi.IsEnabled)
+                Debug.Print("Enabled Successfully. At this point, the on-board LED on RS9110_N_11_21_1_Compatible module is ON.");
+            else
+                throw new Exception();
+
+            // This event handler checks netowrk avaialblty (Ethernet, WiFi and PPP).
+            NetworkChange.NetworkAvailabilityChanged += new NetworkAvailabilityChangedEventHandler(NetworkChange_NetworkAvailabilityChanged);
+
+            //WiFi.StartAdHocHost("Ad-Hoc Test", SecurityMode.Open, "", 10);
+            WiFi.StartAdHocHost("Ad-Hoc Test WEP", SecurityMode.WEP, "A1CEF53456A1CEF53456AF34DB", 10); // 128bit key (26 Hex numbers)
+            //WiFi.StartAdHocHost("Ad-Hoc Test WEP", SecurityMode.WEP, "A1CEF53456A", 10); // 64bit key (10 Hex numbers)
+            Debug.Print("Join the other peer of Ad-Hoc connection");
+            NetworkInterface[] netif = NetworkInterface.GetAllNetworkInterfaces();
+            netif[0].EnableStaticIP("192.168.137.2", "255.255.255.0", "0.0.0.0");
+            Debug.Print("Set the other peer's IP to 192.168.137.1");
+            Debug.Print("Try to ping this IP from the other peer 192.168.137.2");
+            Thread.Sleep(10000);
+            Debug.Print("Disconnect WiFi link.");
+            WiFi.Disconnect();
+            Debug.Print("Disable WiFi interface");
+            WiFi.Disable();
+            Debug.Print("The end of test");
+            Thread.Sleep(Timeout.Infinite);
+        }
+
+
+        static void NetworkChange_NetworkAvailabilityChanged(object sender, NetworkAvailabilityEventArgs e)
+        {
+            Debug.Print("Network Availability Event Triggered");
+            if (e.IsAvailable)
+            {
+                if (WiFi.IsEnabled)// Make sure that the event is fired by WiFi interface, not other networking interface.
+                    if (WiFi.IsLinkConnected)
+                    {
+
+                        Debug.Print("Ad-Hoc Host started.");
+                    }
+            }
+            else
+            {
+                if (WiFi.IsEnabled)// Make sure that the event is fired by WiFi interface, not other networking interface.
+                    if (!WiFi.IsLinkConnected)
+                    {
+
+                        Debug.Print("WiFi connection was dropped or disconnected!");
+                    }
+            }
+        }
+
+    }
+
+
+
+]]>
+</code>
+             </example>
+             <example>
+             ZeroG ZG100M_Compatible Wifi module :This example enables WiFi Interface, sets the WiFi options and retrieves an IP address lease from DHCP server.
+             <code>
+<![CDATA[
+/// Add these libraries to your project's References
+/// System
+/// Microsoft.SPOT.Hardware
+/// Microsoft.SPOT.Net
+/// GHIElectronics.NETMF.System
+/// GHIElectronics.NETMF.Net
+using System;
+using System.Threading;
+using Microsoft.SPOT;
+using Microsoft.SPOT.Net.NetworkInformation;
+using GHIElectronics.NETMF.Net;
+using Microsoft.SPOT.Hardware;
+using System.Net;
+
+namespace WiFi_Example4._0
+{
+    public class Program
+    {
+        static public bool wifi_event = false;
+        static public bool wifi_last_status = false;
+        static public bool network_is_read = false;
+
+        static public ManualResetEvent NetworkAvailablityBlocking = null;
+
+        public static void Main()
+        {
+            NetworkChange.NetworkAvailabilityChanged += new NetworkAvailabilityChangedEventHandler(NetworkChange_NetworkAvailabilityChanged);
+            if (!WiFi.IsEnabled)
+            {
+                //WiFi.Enable(SPI.SPI_module.SPI1, (Cpu.Pin)11, (Cpu.Pin)29);// ChipworkX DevSys
+                WiFi.Enable(WiFi.HardwareModule.ZG100M_Compatible,SPI.SPI_module.SPI2, (Cpu.Pin)33, (Cpu.Pin)19);// EMX DevSys
+                //WiFi.Enable(SPI.SPI_module.SPI1, (Cpu.Pin)28, (Cpu.Pin)26);// EM DevSys
+
+            }
+
+            // WiFi settings
+            NetworkInterface[] netif = NetworkInterface.GetAllNetworkInterfaces();
+            Wireless80211 WiFiSettings = null;
+            for (int index = 0; index < netif.Length; ++index)
+            {
+                if (netif[index] is Wireless80211)
+                {
+                    WiFiSettings = (Wireless80211)netif[index];
+
+                }
+            }
+
+            if (WiFiSettings.Ssid != "AP-SSID")
+            {
+                WiFiSettings.Ssid = "AP-SSID";
+                WiFiSettings.PassPhrase = "passphrase";
+                WiFiSettings.Encryption = Wireless80211.EncryptionType.WPA;
+                Wireless80211.SaveConfiguration(new Wireless80211[] { WiFiSettings }, false);
+            }
+            NetworkAvailablityBlocking = new ManualResetEvent(false);
+            if (!WiFi.IsLinkConnected)
+            {
+                Debug.Print("Waiting for WiFi link!");
+                NetworkAvailablityBlocking.Reset();
+                while (!NetworkAvailablityBlocking.WaitOne(5000, false))
+                {
+                    if (!WiFi.IsLinkConnected)
+                    {
+                        Debug.Print("WiFi link is not available yet! Wrong AP settings?");
+                        Debug.Print("Still waiting.");
+                    }
+                    else
+                        break;
+                }
+            }
+            Debug.Print("WiFi link is ready!");
+
+            Debug.Print("Enable DHCP");
+            try
+            {
+                if (!WiFiSettings.IsDhcpEnabled)
+                    WiFiSettings.EnableDhcp();// This function is blocking
+                else
+                {
+                    WiFiSettings.RenewDhcpLease();// This function is blocking
+                }
+                network_is_read = true;
+                Debug.Print("Network settings:");
+                Debug.Print("IP Address: " + WiFiSettings.IPAddress);
+                Debug.Print("Subnet Mask: " + WiFiSettings.SubnetMask);
+                Debug.Print("Default Getway: " + WiFiSettings.GatewayAddress);
+                Debug.Print("DNS Server: " + WiFiSettings.DnsAddresses[0]);
+            }
+            catch
+            {
+                Debug.Print("DHCP Faild");
+            }
+
+            Debug.Print("Test DNS");
+            try
+            {
+                IPHostEntry myIP = Dns.GetHostEntry("www.ghielectronics.com");
+
+                if (myIP != null)
+                {
+                    Debug.Print(myIP.HostName + ": " + myIP.AddressList[0].ToString());
+                }
+            }
+            catch
+            {
+                Debug.Print("Faild to Get the host entry of the FQN from DNS server!");
+            }
+
+            Thread.Sleep(Timeout.Infinite);
+        }
+
+
+        // This call back will be called when any change occures on Ethernet cable connection or WiFi physical link.
+        // Also it reports PPP connection status if PPP is enabled.
+        static void NetworkChange_NetworkAvailabilityChanged(object sender, NetworkAvailabilityEventArgs e)
+        {
+            if (e.IsAvailable)
+            {
+                if (WiFi.IsLinkConnected)
+                {
+                    if (wifi_last_status != true)
+                    {
+                        wifi_last_status = true;
+                        NetworkAvailablityBlocking.Set();
+                    }
+                }
+            }
+            else
+            {
+                if (!WiFi.IsLinkConnected)
+                {
+                    if (wifi_last_status != false)
+                    {
+                        wifi_last_status = false;
+                        network_is_read = false;
+                    }
+                }
+            }
+        }
+
+    }
+}
+]]>
+</code>
+             </example>
+        </member>
+        <member name="M:GHIElectronics.NETMF.Net.WiFi.Enable(GHIElectronics.NETMF.Net.WiFi.HardwareModule,Microsoft.SPOT.Hardware.SPI.SPI_module,Microsoft.SPOT.Hardware.Cpu.Pin,Microsoft.SPOT.Hardware.Cpu.Pin,Microsoft.SPOT.Hardware.Cpu.Pin)">
+            <summary>
+            Hooks TCP/IP stack to WiFi interface and enables the WiFi hardware module.<br/>
+            </summary>
+            <remarks>
+            This Method enables the network interface dynamically. There is no need to restart the system to get the interface active.<br/>
+            Executing this method unhooks the TCP/IP stack from other Network interfaces such as Ethernet or PPP.<br/>
+            It is recommended to close all sockets/connections before executing this method.
+            </remarks>
+            <param name="module">WiFi hardware module.</param>
+            <param name="spi">SPI module.</param>
+            <param name="CS">Chip Select pin.</param>
+            <param name="ExtInt">External Interrupt pin (MUST BE A GPIO WITH INTERRUPT CAPABILITY).</param>
+            <param name="Reset"> Reset Signal</param>
+        </member>
+        <member name="M:GHIElectronics.NETMF.Net.WiFi.UpdateFirmware(GHIElectronics.NETMF.Net.WiFi.HardwareModule,Microsoft.SPOT.Hardware.SPI.SPI_module,Microsoft.SPOT.Hardware.Cpu.Pin,Microsoft.SPOT.Hardware.Cpu.Pin,Microsoft.SPOT.Hardware.Cpu.Pin)">
+            <summary>
+            Updates WiFi module's firmware with the matching version.
+            </summary>
+            <remarks>
+            This method must be called if Enable() raised this exception:WiFiException.ErrorCode.HardwareFirmwareVersionMismatch
+            </remarks>
+            <param name="module">WiFi hardware module.</param>
+            <param name="spi">SPI module.</param>
+            <param name="CS">Chip Select pin.</param>
+            <param name="ExtInt">External Interrupt pin (MUST BE A GPIO WITH INTERRUPT CAPABILITY).</param>
+            <param name="Reset"> Reset Signal</param>
+        </member>
+        <member name="M:GHIElectronics.NETMF.Net.WiFi.Disable">
+            <summary>
+            Disable WiFi interface.
+            </summary>
+            <remarks>Use this method to disable WiFi interface and hook the TCP/IP stack back to the default networking interface.<br/>
+            <stronge>Note:</stronge> WiFi connection must be disconnected before disabling the inteface.
+            </remarks>
+        </member>
+        <member name="M:GHIElectronics.NETMF.Net.WiFi.Scan">
+            <summary>
+            scans all WiFi channel for searching for WiFi Network.
+            </summary>
+            <returns>An array of the found access point.</returns>
+        </member>
+        <member name="M:GHIElectronics.NETMF.Net.WiFi.Scan(System.UInt32)">
+            <summary>
+            scans a specific WiFi channel.
+            </summary>
+            <param name="channel">Channel Number (0 to scan all the channels, 1-14 to scan in the specific channel).</param>
+            <returns>An array of the found access point.</returns>
+        </member>
+        <member name="M:GHIElectronics.NETMF.Net.WiFi.Scan(System.String)">
+            <summary>
+            searchs for WiFi Netwrok with specific name (SSID).
+            </summary>
+            <param name="SSID">SSID Service set identifier (the wifi netwrok name). String.Empty to scan for all networks in the range.</param>
+            <returns>An array of the found access point.</returns>
+        </member>
+        <member name="M:GHIElectronics.NETMF.Net.WiFi.Scan(System.UInt32,System.String)">
+            <summary>
+            searchs for WiFi Netwrok with specific name (SSID) at a specific wifi channel.
+            </summary>
+            <param name="channel">Channel Number (0 to scan all the channels, 1-14 to scan in the specific channel).</param>
+            <param name="SSID">SSID Service set identifier (the wifi netwrok name). String.Empty to scan for all networks in the range.</param>
+            <returns>An array of the found access point.</returns>
+        </member>
+        <member name="M:GHIElectronics.NETMF.Net.WiFi.Join(GHIElectronics.NETMF.Net.WiFiNetworkInfo,System.String)">
+            <summary>
+            Join hostingNetwork
+            </summary>
+            <param name="hostingNetwork">Wireless network information (usually it is generated by <see cref="M:GHIElectronics.NETMF.Net.WiFi.Scan"/> method)</param>
+            <param name="PreSharedKey">equals "" for open networks. <br/>
+            With WPA or WPA2, it is a plain string ass phrase. For example:"password"<br/>
+            With WEP, Key1 should be use in HEX format in a string. For example: if the Key 1 is 0xE8430A5EDB then use this string "E8430A5EDB".<br/>
+            </param>
+        </member>
+        <member name="M:GHIElectronics.NETMF.Net.WiFi.StartAdHocHost(System.String,GHIElectronics.NETMF.Net.SecurityMode,System.String,System.UInt32)">
+            <summary>
+            This API creates Ad-Hoc hosing network to let other node connect peer-to-peer to this wifi module.
+            </summary>
+            <param name="ssid">SSID of the access point</param>
+            <param name="security">Security Mode</param>
+            <param name="PreSharedKey">Preshared key or passphrase</param>
+            <param name="channelno">It states in which channel the network should be created.</param>
+        </member>
+        <member name="M:GHIElectronics.NETMF.Net.WiFi.Disconnect">
+            <summary>
+             Disconnects WiFi after a successful connection.
+            </summary>
+        </member>
+        <member name="P:GHIElectronics.NETMF.Net.WiFi.CurrentHardwareModule">
+            <summary>
+            Returns the current used WiFi hardware module
+            </summary>
+        </member>
+        <member name="P:GHIElectronics.NETMF.Net.WiFi.IsEnabled">
+            <summary>
+            Checks if WiFi interface enabled or not.
+            </summary>
+        </member>
+        <member name="P:GHIElectronics.NETMF.Net.WiFi.IsLinkConnected">
+            <summary>
+            Checks WiFi link status.
+            </summary>
+            <remarks>WiFi interface must be enabled.<br/></remarks>
+        </member>
+        <member name="P:GHIElectronics.NETMF.Net.WiFi.MacAddress">
+            <summary>
+            RS9110_N_11_21_1_Compatible Module Mac address
+            </summary>
+        </member>
+        <member name="T:GHIElectronics.NETMF.Net.WiFi.WiFiException">
+            <summary>
+            WiFi Exception
+            </summary>
+        </member>
+        <member name="F:GHIElectronics.NETMF.Net.WiFi.WiFiException.errorCode">
+            <summary>
+            Error Code
+            </summary>
+        </member>
+        <member name="F:GHIElectronics.NETMF.Net.WiFi.WiFiException.ErrorMsg">
+            <summary>
+            Error Message
+            </summary>
+        </member>
+        <member name="M:GHIElectronics.NETMF.Net.WiFi.WiFiException.#ctor(GHIElectronics.NETMF.Net.WiFi.WiFiException.ErrorCode)">
+            <summary>
+            WiFiException Constructor
+            </summary>
+            <param name="err">ErrorCode</param>
+        </member>
+        <member name="M:GHIElectronics.NETMF.Net.WiFi.WiFiException.#ctor(GHIElectronics.NETMF.Net.WiFi.WiFiException.ErrorCode,System.String)">
+            <summary>
+            WiFiException Constructor
+            </summary>
+            <param name="err">ErrorCode</param>
+            <param name="msg">Error message if extra information about the error is available</param>
+        </member>
+        <member name="T:GHIElectronics.NETMF.Net.WiFi.WiFiException.ErrorCode">
+            <summary>
+            WiFiException Error Code
+            </summary>
+        </member>
+        <member name="F:GHIElectronics.NETMF.Net.WiFi.WiFiException.ErrorCode.NoError">
+            <summary>
+            No Error
+            </summary>
+        </member>
+        <member name="F:GHIElectronics.NETMF.Net.WiFi.WiFiException.ErrorCode.AlreadyJoined">
+            <summary>
+            Already Joined or associated.
+            </summary>
+        </member>
+        <member name="F:GHIElectronics.NETMF.Net.WiFi.WiFiException.ErrorCode.WrongSSID">
+            <summary>
+            The SSID (AP name) provided not found
+            </summary>
+        </member>
+        <member name="F:GHIElectronics.NETMF.Net.WiFi.WiFiException.ErrorCode.AuthenticationFailed">
+            <summary>
+            Authenticaion failure or Worng pass phrase
+            </summary>
+        </member>
+        <member name="F:GHIElectronics.NETMF.Net.WiFi.WiFiException.ErrorCode.InvalidChannel">
+            <summary>
+            Invalid radio channel
+            </summary>
+        </member>
+        <member name="F:GHIElectronics.NETMF.Net.WiFi.WiFiException.ErrorCode.UnKnownError">
+            <summary>
+            Unknown Error
+            </summary>
+        </member>
+        <member name="F:GHIElectronics.NETMF.Net.WiFi.WiFiException.ErrorCode.HardwareNotEnabled">
+            <summary>
+            The WiFi module is not enabled.
+            </summary>
+        </member>
+        <member name="F:GHIElectronics.NETMF.Net.WiFi.WiFiException.ErrorCode.HardwareCommunicationFailure">
+            <summary>
+            It means that the system could not communicate with the WiFi module.
+            </summary>
+        </member>
+        <member name="F:GHIElectronics.NETMF.Net.WiFi.WiFiException.ErrorCode.HardwareCommunicationTimeout">
+            <summary>
+            It means that the system could communicate with the WiFi module but it did not get the expected initialization response. This happens when the WiFi module firmware is corrupted. The firmware can be updated using WiFi FirmwareUpdate() method.
+            </summary>
+        </member>
+        <member name="F:GHIElectronics.NETMF.Net.WiFi.WiFiException.ErrorCode.HardwareFirmwareVersionMismatch">
+            <summary>
+            It means that WiFi module firmware version and the current supported version with the hosting system mismatches. The firmware can be updated using WiFi FirmwareUpdate() method.
+            </summary>
+        </member>
+        <member name="F:GHIElectronics.NETMF.Net.WiFi.WiFiException.ErrorCode.NotSupported">
+            <summary>
+            Not Supported Feature.
+            </summary>
+        </member>
+        <member name="F:GHIElectronics.NETMF.Net.WiFi.WiFiException.ErrorCode.RequestTimeout">
+            <summary>
+            Time out
+            </summary>
+        </member>
+        <member name="T:GHIElectronics.NETMF.Net.WiFi.HardwareModule">
+            <summary>
+            WiFi Hardware Modules
+            </summary>
+        </member>
+        <member name="F:GHIElectronics.NETMF.Net.WiFi.HardwareModule.ZG100M_Compatible">
+            <summary>
+            ZeroG ZG2100M module or compatible module from the same vendor.
+            </summary>
+        </member>
+        <member name="F:GHIElectronics.NETMF.Net.WiFi.HardwareModule.RS9110_N_11_21_1_Compatible">
+            <summary>
+            RedPine RS9110N-11-21_1 module or compatible module from the same vendor.
+            </summary>
+        </member>
+        <member name="T:GHIElectronics.NETMF.Net.PPP">
+            <summary>
+            This class provides setup features to control the PPP connections.
+            </summary>
+            <remarks>
+            <strong>Important note:</strong> Currently TCP/IP stack can handle only one network interface at the same time.
+            For instance, if PPP is enabled, Ethernet and PPP will be unhooked with the TCP/IP stack.<br/>
+            <br/>
+            With this class, the user can communicate with other devices using PPP and Micro Framework TCP/IP stack.<br/>
+            Only PPP client with PAP authentication or non-authentication is supported.<br/>
+            The user starts by enabling the PPP communication interface. Then a connection is established using Connect(). Once the connection is ready, the user can use network features.
+            </remarks>
+            /// <example>
+            This example enables Ethernet Interface and retrieves an IP address lease from DHCP server. An example code about AT commands is also provided.
+            <code>
+<![CDATA[
+/// Add these libraries to your project's References
+/// System
+/// Microsoft.SPOT.Net
+/// Microsoft.SPOT.Hardware.SerialPort
+/// System.IO
+/// GHIElectronics.NETMF.System
+/// GHIElectronics.NETMF.Net
+using System;
+using System.Threading;
+using Microsoft.SPOT;
+using Microsoft.SPOT.Net.NetworkInformation;
+using GHIElectronics.NETMF.Net;
+using System.Net;
+using System.IO.Ports;
+
+namespace PPP_Example_4._0
+{
+    public class Program
+    {
+        static public SerialPort modem = new SerialPort("COM2", 115200);
+        static public bool network_is_read = false;
+        public static void Main()
+        {
+            NetworkChange.NetworkAvailabilityChanged += new NetworkAvailabilityChangedEventHandler(NetworkChange_NetworkAvailabilityChanged);
+            // Till this point TCP/IP stack is hooked previously Enabled interface (Ethernet by default)
+            PPP.Enable(modem);
+            modem.Handshake = Handshake.RequestToSend; // This is to avoid data loss during PPP communication.
+            modem.Open();
+            modem.ErrorReceived += new SerialErrorReceivedEventHandler(modem_ErrorReceived);
+            NetworkInterface[] netif = NetworkInterface.GetAllNetworkInterfaces();
+
+
+            ////////////////////////////////////////////////////////////////////////////////////////
+            /// This is a simple code example using PPP connecion over direct serial cable connection with Windows XP or Vista.
+            //bool c = false;
+            //modem.Write(Encoding.UTF8.GetBytes("CLIENT"), 0, 6);
+            //while (!ATconnected)
+            //{
+            //    int size = modem.Read(buffer, 0, modem.BytesToRead);
+            //    if (size == 0)
+            //        modem.Write(Encoding.UTF8.GetBytes("CLIENT"), 0, 6);
+            //    for (int i = 0; i < size; i++)
+            //    {
+            //        Debug.Print(((char)buffer[i]).ToString());
+            //        if (buffer[i] == 'C')
+            //            c = true;
+            //        if (c && buffer[i] == 'R')
+            //            ATconnected = true;
+
+            //    }
+            //    Thread.Sleep(1000);
+            //}
+            //ATconnected = false;
+            //modem.DiscardInBuffer();
+            //if(true) 
+            ////////////////////////////////////////////////////////////////////////////////////////
+            Debug.Print("Dial-in using AT commands");
+            ATcommander at = new ATcommander(modem);
+            if (at.ClientConnectModem())
+            {
+                network_is_read = false;
+                Debug.Print("Connect PPP");
+                switch (PPP.Connect("username", "password"))
+                {
+                    case PPP.ConnectionStatus.Authentication_Faild:
+                        Debug.Print("Authentication_Faild");
+                        break;
+                    case PPP.ConnectionStatus.Connection_Faild:
+                        Debug.Print("Connection_Faild");
+                        break;
+                    case PPP.ConnectionStatus.Connected:
+                        // PPP setting will overload the first interface settings since only one interface is supported.
+                        netif = NetworkInterface.GetAllNetworkInterfaces();
+                        Debug.Print("PPP Network settings:");
+                        Debug.Print("IP Address: " + netif[0].IPAddress);
+                        Debug.Print("Subnet Mask: " + netif[0].SubnetMask);
+                        Debug.Print("Default Getway: " + netif[0].GatewayAddress);
+                        Debug.Print("DNS Server: " + netif[0].DnsAddresses[0]);
+                        network_is_read = true;
+                        break;
+                    case PPP.ConnectionStatus.Disconnected:
+                        Debug.Print("Disconnected");
+                        break;
+
+                }
+            }
+            else
+            {
+                Debug.Print("Terminal server is not responding");
+            }
+            if (network_is_read)
+            {
+                Debug.Print("Test DNS");
+                try
+                {
+                    IPHostEntry myIP = Dns.GetHostEntry("www.ghielectronics.com");
+
+                    if (myIP != null)
+                    {
+                        Debug.Print(myIP.HostName + ": " + myIP.AddressList[0].ToString());
+                    }
+                }
+                catch
+                {
+                    Debug.Print("Faild to Get the host entry of the FQN from DNS server!");
+                }
+
+                Debug.Print("Disconnect PPP link.");
+                PPP.Disconnect();
+
+            }
+
+            Debug.Print("Disable PPP interface");
+            PPP.Disable();
+            // At this point TCP/IP stack will reinitialized be hooked back to Ethernet or WiFi
+            
+            Thread.Sleep(Timeout.Infinite);
+
+        }
+
+        static void NetworkChange_NetworkAvailabilityChanged(object sender, NetworkAvailabilityEventArgs e)
+        {
+
+            if (e.IsAvailable)
+            {
+                if (PPP.IsLinkConnected)
+                {
+                    Debug.Print("PPP connection was established!");
+                }
+            }
+            else
+            {
+                if (!PPP.IsLinkConnected)
+                {
+                    Debug.Print("PPP connection was dropped or disconnected!");
+                    network_is_read = false;
+                }
+            }
+        }
+
+        static void modem_ErrorReceived(object sender, SerialErrorReceivedEventArgs e)
+        {
+            // Serial communication is loosing data
+        }
+
+    }
+}
+
+]]>
+</code>
+            </example>
+            /// <example>
+            This example provide simple class code to handle AT command dial up process. This code is use with Telit GM862. User must use this code as only an example and it is provided as it is.
+            <code>
+<![CDATA[
+/// Add these libraries to your project's References
+/// System
+/// Microsoft.SPOT.Net
+/// Microsoft.SPOT.Hardware.SerialPort
+/// GHIElectronics.NETMF.System
+/// GHIElectronics.NETMF.Net
+using System;
+using Microsoft.SPOT;
+using System.IO.Ports;
+using System.Text;
+using System.Threading;
+
+
+enum ATSequence
+{
+    CR_Begin,
+    NL_Begin,
+    ResultCode,
+    CR_End,
+    NL_End
+};
+enum ATstatus
+{
+    init,
+    APsetting,
+    Dial,
+    Connected,
+    Disconnect
+};
+
+class ATcommander
+{
+    SerialPort modem;
+    ATstatus atstatus = ATstatus.init;
+    ATSequence atsequence = ATSequence.CR_Begin;
+    bool clientReq = false;
+    public ATcommander(SerialPort serial)
+    {
+        modem = serial;
+    }
+
+    public bool ClientConnectModem()
+    {
+        bool con = false;
+        int trial = 0;
+        int size = 0;
+        String message;
+        byte[] buffer = new byte[125];
+        if (clientReq == false)
+        {
+
+
+            clientReq = true;
+            atstatus = ATstatus.init;
+            atsequence = ATSequence.CR_Begin;
+            modem.Write(new byte[] { 0x7E, 0xFF, 0x7D, 0x23, 0xC0, 0x21, 0x7D, 0x25, 0x7D, 0x2A, 0x7D, 0x20, 0x7D, 0x30, 0x2B, 0xD3, 0x45, 0xAF, 0x7D, 0x20, 0x3C, 0xCD, 0x74, 0x7D, 0x20, 0x7D, 0x20, 0x7D, 0x20, 0x7D, 0x20, 0x2A, 0x9D, 0x7E }, 0, 34);// Terminate request          
+            modem.Write(Encoding.UTF8.GetBytes("\r+++"), 0, 4);// Escape Sequence
+            Thread.Sleep(3000);
+            modem.Write(Encoding.UTF8.GetBytes("ATH\r"), 0, 4); // Hook On
+            Thread.Sleep(1000);
+            modem.Write(Encoding.UTF8.GetBytes("ATZ\r"), 0, 4); // Soft Reset, basic default restore
+            Thread.Sleep(100);
+            modem.Write(Encoding.UTF8.GetBytes("ATE\r"), 0, 4); // Echo Disabled
+            Thread.Sleep(100);
+            modem.DiscardInBuffer();
+            // modem.DataReceived += new SerialDataReceivedEventHandler(modem_DataReceived);
+            modem.Write(Encoding.UTF8.GetBytes("AT+FLO=2\r"), 0, 9);// Enable handshaking
+            // modem.Write(Encoding.UTF8.GetBytes("AT\r"), 0, 3);
+            Thread.Sleep(100);
+
+
+            while (!con)
+            {
+                size = modem.Read(buffer, 0, modem.BytesToRead);
+                for (int i = 0; i < size; i++)
+                {
+                    //Debug.Print(((char)buffer[i]).ToString());
+
+                    // AT stuff//////////////////////
+                    message = GetATResultCode(buffer[i]);
+                    if (message != null)
+                    {
+                        Debug.Print(message);
+                        con = ProcessAT(message);
+                    }
+                    /////////////////////////////////
+                }
+
+                trial++;
+                if (trial > 20)// trials
+                {
+
+                    clientReq = false;
+                    return false;
+                }
+                Thread.Sleep(100);
+            }
+            clientReq = false;
+            return true;
+        }
+        return false;
+
+    }
+
+    private bool ProcessAT(String message)
+    {
+        switch (atstatus)
+        {
+            case ATstatus.init:
+                if (message == "OK")
+                {
+                    atstatus = ATstatus.APsetting;
+                    modem.Write(Encoding.UTF8.GetBytes("AT+cgdcont=2,\"IP\",\"wap.cingular\"\r"), 0, 33);
+                }
+                break;
+            case ATstatus.APsetting:
+                if (message == "OK")
+                {
+                    atstatus = ATstatus.Dial;
+                    modem.Write(Encoding.UTF8.GetBytes("ATDT*99***2#\r"), 0, 13);
+                }
+                break;
+            case ATstatus.Dial:
+                if (message == "CONNECT")
+                {
+                    atstatus = ATstatus.Connected;
+                    Debug.Print("AT connected, Ready for PPP connection Establishing!");
+                    return true;
+                }
+                else
+                {
+                    modem.Write(Encoding.UTF8.GetBytes("ATDT*99***2#\r"), 0, 13);
+                }
+                break;
+        }
+        return false;
+
+    }
+
+
+    static byte[] ResultCodeBuffer = new byte[32];
+    int index = 0;
+
+    private String GetATResultCode(byte s)
+    {
+
+        switch (atsequence)
+        {
+            case ATSequence.CR_Begin:
+                if (s == 0x0D)
+                    atsequence = ATSequence.NL_Begin;
+                break;
+            case ATSequence.NL_Begin:
+                if (s == 0x0A)
+                {
+                    atsequence = ATSequence.ResultCode;
+                    index = 0;
+                }
+                else
+                {
+                    atsequence = ATSequence.CR_Begin;
+                }
+                break;
+            case ATSequence.ResultCode:
+                if (s == 0x0D)
+                {
+                    if (index != 0)
+                        atsequence = ATSequence.NL_End;
+                    else
+                        atsequence = ATSequence.NL_Begin;
+                }
+                else if (s == 0x0A)
+                    atsequence = ATSequence.CR_Begin;
+                else
+                {
+                    ResultCodeBuffer[index++] = s;
+                }
+                break;
+            case ATSequence.CR_End:
+                if (s == 0x0D)
+                    atsequence = ATSequence.NL_End;
+                else
+                {
+                    atsequence = ATSequence.CR_Begin;
+                }
+                break;
+            case ATSequence.NL_End:
+                if (s == 0x0A)
+                {
+                    atsequence = ATSequence.CR_Begin;
+
+                    return new String(Encoding.UTF8.GetChars(ResultCodeBuffer), 0, index);
+                }
+                break;
+        }
+        return null;
+    }
+
+}
+
+
+
+]]>
+</code>
+            </example>
+        </member>
+        <member name="M:GHIElectronics.NETMF.Net.PPP.Enable(System.IO.Ports.SerialPort)">
+            <summary>
+            Enable PPP interface. It hooks TCP/IP stack to PPP interface and serial port to modem.<br/>
+            </summary>
+            <remarks>
+            This Method enables the network interface dynamically. There is no need to restart the system to get the interface active.<br/>
+            PPP Interface will NOT be enabled on next system startup. i.e. user has to enable PPP in the application.<br/>
+            Executing this method unhooks the TCP/IP stack from other Network interfaces such as Ethernet or PPP.<br/>
+            It is recommended to close all sockets/connections before executing this method, otherwise they will be lost.<br/>
+            <stong>Note:</stong> PPP can be disabled using Disable(). The TCP/IP stack will hook back with the original networking interface, Ethernet or WiFi.<br/>
+            </remarks>
+            <param name="serial">SerialPort object controlling hardware serial port connected to the modem</param>
+        </member>
+        <member name="M:GHIElectronics.NETMF.Net.PPP.Enable(GHIElectronics.NETMF.USBHost.USBH_Device)">
+            <summary>
+            Enable PPP interface. It hooks TCP/IP stack to PPP interface and serial port capable USB devices uch as USB-to-Serial, CDC or Sierra 3G USB modem.<br/>
+            </summary>
+            <remarks>
+            This Method enables the network interface dynamically. There is no need to restart the system to get the interface active.<br/>
+            PPP Interface will NOT be enabled on next system startup. i.e. user has to enable PPP in the application.<br/>
+            Executing this method unhooks the TCP/IP stack from other Network interfaces such as Ethernet or PPP.<br/>
+            It is recommended to close all sockets/connections before executing this method, otherwise they will be lost.<br/>
+            <stong>Note:</stong> PPP can be disabled using Disable(). The TCP/IP stack will hook back with the original networking interface, Ethernet or WiFi.<br/>
+            <stong>Important Note:</stong> Use must Disconnect, Disable PPP if the USBH_SerialUSB is disconnected.<br/>
+            </remarks>
+            <param name="usbDevice"> Must be a <c>USBH_SerialUSB</c>. </param>
+        </member>
+        <member name="M:GHIElectronics.NETMF.Net.PPP.Disable">
+            <summary>
+            Disable PPP interface.
+            </summary>
+            <remarks>Use this method to disable PPP interface and hook the TCP/IP stack back to the previous networking interface WiFi or Ethernet.<br/>
+            <stronge>Note:</stronge> PPP connection must be disconnected before disabling the inteface.
+            </remarks>
+        </member>
+        <member name="M:GHIElectronics.NETMF.Net.PPP.Connect(System.String,System.String)">
+            <summary>
+            Performs PPP connection using a user name and passward with PAP authentication.<br/>  This feature enables the user to dial in through serial modem ( V.90/ GPRS/ 3G ) to access the Internet or extranet.<br/>In this case, Network settings will be taken from the host server.<br/>
+            </summary>
+            <param name="username">Username</param>
+            <param name="password">Uassword</param>
+            <returns>ConnectionStatus</returns>
+            <remarks>
+            <b>Note: </b>This method is blocking.<br/>
+            <b>Note: </b>The communication interface(for example a COM port) MUST be ready and opened before the method is called.<br/>
+            <b>Note: </b>Once this method is called, the user MUST not use the communication interface (for example, the serial port).<br/>
+            <b>Note: </b>The user MUST make sure the connection is ready before using the MFW TCP/IP stack and opening sockets.<br/>
+            </remarks>
+        </member>
+        <member name="M:GHIElectronics.NETMF.Net.PPP.Disconnect">
+            <summary>
+            Disconnects PPP after a successful connection.
+            </summary>
+            <returns>ConnectionStatus</returns>
+            <remarks>
+            <b>Note: </b>This method is blocking.<br/>
+            <b>Note: </b>The user can use the communication interface (for example a COM port) only after the method is done.<br/>
+            </remarks>
+        </member>
+        <member name="P:GHIElectronics.NETMF.Net.PPP.IsLinkConnected">
+            <summary>
+            Checks PPP link status.
+            </summary>
+        </member>
+        <member name="P:GHIElectronics.NETMF.Net.PPP.IsEnabled">
+            <summary>
+            Checks if PPP interface is currently enabled or not.
+            </summary>
+        </member>
+        <member name="T:GHIElectronics.NETMF.Net.PPP.ConnectionStatus">
+            <summary>
+            Connect() or Disconnect() return enumeration
+            </summary>
+        </member>
+        <member name="F:GHIElectronics.NETMF.Net.PPP.ConnectionStatus.Connected">
+            <summary>
+            PPP connection was established successfully.
+            </summary>
+        </member>
+        <member name="F:GHIElectronics.NETMF.Net.PPP.ConnectionStatus.Disconnected">
+            <summary>
+            PPP connection was disconnected successfully.
+            </summary>
+        </member>
+        <member name="F:GHIElectronics.NETMF.Net.PPP.ConnectionStatus.Connection_Faild">
+            <summary>
+            PPP connection failed and it is disconnected. This could be because the server is requesting CHAP authentication protocol. Only PAP is supported.
+            </summary>
+        </member>
+        <member name="F:GHIElectronics.NETMF.Net.PPP.ConnectionStatus.Authentication_Faild">
+            <summary>
+            PPP connection failed due to worng username or password.
+            </summary>
+        </member>
+        <member name="T:GHIElectronics.NETMF.Net.Ethernet">
+            <summary>
+            This class providse setup features to control the Ethernet interface.
+            </summary>
+            <remarks>
+            <strong>Important note:</strong> Currently TCP/IP stack can handle only one network interface at the same time.
+            For instance, if Ethernet is enabled, PPP and WiFi will be unhooked with the TCP/IP stack.<br/>
+            <br/>
+            Other general Ethernet settings are available through the following classes:<br/>
+            <c>Microsoft.SPOT.Net.NetworkInformation</c><br/>
+            <c>Microsoft.SPOT.Net.NetworkInformation.NetworkInterface</c><br/>
+            Network availability event handler is also available through <c>Microsoft.SPOT.Net.NetworkInformation.NetworkChange</c> class.<br/>
+            </remarks>
+            <example>
+            This example enables Ethernet Interface and retrieves an IP address lease from DHCP server.
+            <code>
+<![CDATA[
+/// Add these libraries to your project's References
+/// System
+/// Microsoft.SPOT.Net
+/// GHIElectronics.NETMF.System
+/// GHIElectronics.NETMF.Net
+using System;
+using System.Threading;
+using Microsoft.SPOT;
+using Microsoft.SPOT.Net.NetworkInformation;
+using GHIElectronics.NETMF.Net;
+using System.Net;
+
+namespace Ethernet_Example_4._0
+{
+    public class Program
+    {
+        static public bool ethernet_event = false;
+        static public bool ethernet_last_status = false;
+        static public bool network_is_read = false;
+        static public ManualResetEvent NetworkAvailablityBlocking = null;
+        public static void Main()
+        {
+            
+            if (!Ethernet.IsEnabled)
+            {
+                Ethernet.Enable();
+            }
+            NetworkChange.NetworkAvailabilityChanged += new NetworkAvailabilityChangedEventHandler(NetworkChange_NetworkAvailabilityChanged);
+            NetworkInterface[] netif = NetworkInterface.GetAllNetworkInterfaces();
+            // Ethernet is always the first interface netif[0]
+            NetworkAvailablityBlocking = new ManualResetEvent(false);
+            if (!Ethernet.IsCableConnected)
+            {
+                Debug.Print("Cable is not connected!");
+                NetworkAvailablityBlocking.Reset();
+                while (!NetworkAvailablityBlocking.WaitOne(5000, false))
+                {
+                    if (!Ethernet.IsCableConnected)
+                    {
+                        Debug.Print("Cable is not connected!");
+                        Debug.Print("Still waiting.");
+                    }
+                    else
+                        break;
+                }
+            }
+
+            Debug.Print("Ethernet cable is connected!");
+            Debug.Print("Enable DHCP");
+            try
+            {
+                if (!netif[0].IsDhcpEnabled)
+                    netif[0].EnableDhcp();// This function is blocking
+                else
+                {
+                    netif[0].RenewDhcpLease();// This function is blocking
+                }
+                network_is_read = true;
+                Debug.Print("Network settings:");
+                Debug.Print("IP Address: " + netif[0].IPAddress);
+                Debug.Print("Subnet Mask: " + netif[0].SubnetMask);
+                Debug.Print("Default Getway: " + netif[0].GatewayAddress);
+                Debug.Print("DNS Server: " + netif[0].DnsAddresses[0]);
+            }
+            catch
+            {
+                Debug.Print("DHCP Faild");
+            }
+
+            Debug.Print("Test DNS");
+            try
+            {
+                IPHostEntry myIP = Dns.GetHostEntry("www.ghielectronics.com");
+
+                if (myIP != null)
+                {
+                    Debug.Print(myIP.HostName + ": " + myIP.AddressList[0].ToString());
+                }
+            }
+            catch
+            {
+                Debug.Print("Faild to Get the host entry of the FQN from DNS server!");
+            }
+
+            Thread.Sleep(Timeout.Infinite);
+          
+        }
+
+        static void NetworkChange_NetworkAvailabilityChanged(object sender, NetworkAvailabilityEventArgs e)
+        {
+            if (e.IsAvailable)
+            {
+                if (Ethernet.IsCableConnected)
+                {
+                    if (ethernet_last_status != true)
+                    {
+                        ethernet_last_status = true;
+                        NetworkAvailablityBlocking.Set();
+                    }
+                }
+            }
+            else
+            {
+                if (!WiFi.IsLinkConnected)
+                {
+                    if (ethernet_last_status != false)
+                    {
+                        ethernet_last_status = false;
+                        network_is_read = false;
+                    }
+                }
+            }
+        }
+
+    }
+}
+
+]]>
+</code>
+            </example>
+        </member>
+        <member name="M:GHIElectronics.NETMF.Net.Ethernet.Enable">
+            <summary>
+            Hooks TCP/IP stack to Ethernet interface.<br/>
+            </summary>
+            <remarks>
+            This Method enables the network interface dynamically. There is no need to restart the system to get the interface active.<br/>
+            Furthermore, there is no need to enable the interface every time the system runs since enabling interface becomes permanent unless it is changed again.<br/>
+            Executing this method unhooks the TCP/IP stack from other Network interfaces such as WiFi or PPP.<br/>
+            It is recommended to close all sockets/connections before executing this method, otherwise they will be lost.
+            </remarks>
+        </member>
+        <member name="P:GHIElectronics.NETMF.Net.Ethernet.IsCableConnected">
+            <summary>
+            Checks Ethernet cable connection status.
+            </summary>
+            <remarks>This Property can be called any time to check whether the cable is connected or not.</remarks>
+        </member>
+        <member name="P:GHIElectronics.NETMF.Net.Ethernet.IsEnabled">
+            <summary>
+            Checks if Ethernet interface is currently enabled or not.
+            </summary>
+        </member>
+    </members>
+</doc>

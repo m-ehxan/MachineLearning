@@ -1,0 +1,74 @@
+<?xml version="1.0"?>
+<doc>
+    <assembly>
+        <name>GTM.GHIElectronics.Button</name>
+    </assembly>
+    <members>
+        <member name="T:Gadgeteer.Modules.GHIElectronics.Button">
+            <summary>A Button module for .NET Gadgeteer</summary>
+        </member>
+        <member name="M:Gadgeteer.Modules.GHIElectronics.Button.#ctor(System.Int32)">
+            <summary>Constructs a new instance.</summary>
+            <param name="socketNumber">The mainboard socket that has the module plugged into it.</param>
+        </member>
+        <member name="M:Gadgeteer.Modules.GHIElectronics.Button.TurnLedOn">
+            <summary>Turns on the LED.</summary>
+        </member>
+        <member name="M:Gadgeteer.Modules.GHIElectronics.Button.TurnLedOff">
+            <summary>Turns off the LED.</summary>
+        </member>
+        <member name="M:Gadgeteer.Modules.GHIElectronics.Button.ToggleLED">
+            <summary>Turns the LED off if it is on and on if it is off.</summary>
+        </member>
+        <member name="E:Gadgeteer.Modules.GHIElectronics.Button.ButtonReleased">
+            <summary>Raised when the button is released.</summary>
+        </member>
+        <member name="E:Gadgeteer.Modules.GHIElectronics.Button.ButtonPressed">
+            <summary>Raised when the button is pressed.</summary>
+        </member>
+        <member name="P:Gadgeteer.Modules.GHIElectronics.Button.Pressed">
+            <summary>Whether or not the button is pressed.</summary>
+        </member>
+        <member name="P:Gadgeteer.Modules.GHIElectronics.Button.IsLedOn">
+            <summary>Whether or not the LED is currently on or off.</summary>
+        </member>
+        <member name="P:Gadgeteer.Modules.GHIElectronics.Button.Mode">
+            <summary>Gets or sets the LED's current mode of operation.</summary>
+        </member>
+        <member name="T:Gadgeteer.Modules.GHIElectronics.Button.ButtonEventHandler">
+            <summary>Represents the delegate that is used to handle the <see cref="E:Gadgeteer.Modules.GHIElectronics.Button.ButtonReleased"/> and <see cref="E:Gadgeteer.Modules.GHIElectronics.Button.ButtonPressed"/> events.</summary>
+            <param name="sender">The <see cref="T:Gadgeteer.Modules.GHIElectronics.Button"/> object that raised the event.</param>
+            <param name="state">The state of the Button</param>
+        </member>
+        <member name="T:Gadgeteer.Modules.GHIElectronics.Button.ButtonState">
+            <summary>The state of the button.</summary>
+        </member>
+        <member name="F:Gadgeteer.Modules.GHIElectronics.Button.ButtonState.Pressed">
+            <summary>The button is pressed.</summary>
+        </member>
+        <member name="F:Gadgeteer.Modules.GHIElectronics.Button.ButtonState.Released">
+            <summary>The button is released.</summary>
+        </member>
+        <member name="T:Gadgeteer.Modules.GHIElectronics.Button.LedMode">
+            <summary>The various modes a LED can be set to.</summary>
+        </member>
+        <member name="F:Gadgeteer.Modules.GHIElectronics.Button.LedMode.On">
+            <summary>The LED is on regardless of the button state.</summary>
+        </member>
+        <member name="F:Gadgeteer.Modules.GHIElectronics.Button.LedMode.Off">
+            <summary>The LED is off regardless of the button state.</summary>
+        </member>
+        <member name="F:Gadgeteer.Modules.GHIElectronics.Button.LedMode.ToggleWhenPressed">
+            <summary>The LED changes state whenever the button is pressed.</summary>
+        </member>
+        <member name="F:Gadgeteer.Modules.GHIElectronics.Button.LedMode.ToggleWhenReleased">
+            <summary>The LED changes state whenever the button is released.</summary>
+        </member>
+        <member name="F:Gadgeteer.Modules.GHIElectronics.Button.LedMode.OnWhilePressed">
+            <summary>The LED is on while the button is pressed.</summary>
+        </member>
+        <member name="F:Gadgeteer.Modules.GHIElectronics.Button.LedMode.OnWhileReleased">
+            <summary>The LED is on except when the button is pressed.</summary>
+        </member>
+    </members>
+</doc>

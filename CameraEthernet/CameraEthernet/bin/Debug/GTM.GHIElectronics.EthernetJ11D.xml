@@ -1,0 +1,24 @@
+<?xml version="1.0"?>
+<doc>
+    <assembly>
+        <name>GTM.GHIElectronics.EthernetJ11D</name>
+    </assembly>
+    <members>
+        <member name="T:Gadgeteer.Modules.GHIElectronics.EthernetJ11D">
+            <summary>An EthernetJ11D module for Microsoft .NET Gadgeteer</summary>
+        </member>
+        <member name="M:Gadgeteer.Modules.GHIElectronics.EthernetJ11D.#ctor(System.Int32)">
+            <summary>Constructs a new instance.</summary>
+            <param name="socketNumber">The socket that this module is plugged in to.</param>
+        </member>
+        <member name="M:Gadgeteer.Modules.GHIElectronics.EthernetJ11D.UseThisNetworkInterface">
+            <summary>Opens the underlying network interface and assigns the NETMF networking stack.</summary>
+        </member>
+        <member name="P:Gadgeteer.Modules.GHIElectronics.EthernetJ11D.NetworkInterface">
+            <summary>The underlying network interface.</summary>
+        </member>
+        <member name="P:Gadgeteer.Modules.GHIElectronics.EthernetJ11D.IsNetworkConnected">
+            <summary>Whether or not the cable is inserted into the module. Make sure to also check the NetworkUp property to verify network state.</summary>
+        </member>
+    </members>
+</doc>

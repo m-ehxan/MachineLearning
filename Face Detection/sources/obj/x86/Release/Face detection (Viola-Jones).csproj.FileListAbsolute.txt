@@ -1,0 +1,18 @@
+C:\Users\Ehsan\Desktop\Automation\Face Detection\sources\obj\x86\Release\Face detection (Viola-Jones).csprojResolveAssemblyReference.cache
+C:\Users\Ehsan\Desktop\Automation\Face Detection\sources\obj\x86\Release\FaceDetection.MainForm.resources
+C:\Users\Ehsan\Desktop\Automation\Face Detection\sources\obj\x86\Release\Face detection (Viola-Jones).csproj.GenerateResource.Cache
+C:\Users\Ehsan\Desktop\Automation\Face Detection\sources\bin\x86\Release\Face detection (Viola-Jones).exe
+C:\Users\Ehsan\Desktop\Automation\Face Detection\sources\bin\x86\Release\Face detection (Viola-Jones).pdb
+C:\Users\Ehsan\Desktop\Automation\Face Detection\sources\bin\x86\Release\Accord.Controls.Vision.dll
+C:\Users\Ehsan\Desktop\Automation\Face Detection\sources\bin\x86\Release\Accord.dll
+C:\Users\Ehsan\Desktop\Automation\Face Detection\sources\bin\x86\Release\Accord.Imaging.dll
+C:\Users\Ehsan\Desktop\Automation\Face Detection\sources\bin\x86\Release\Accord.MachineLearning.dll
+C:\Users\Ehsan\Desktop\Automation\Face Detection\sources\bin\x86\Release\Accord.Math.dll
+C:\Users\Ehsan\Desktop\Automation\Face Detection\sources\bin\x86\Release\Accord.Statistics.dll
+C:\Users\Ehsan\Desktop\Automation\Face Detection\sources\bin\x86\Release\Accord.Vision.dll
+C:\Users\Ehsan\Desktop\Automation\Face Detection\sources\bin\x86\Release\AForge.dll
+C:\Users\Ehsan\Desktop\Automation\Face Detection\sources\bin\x86\Release\AForge.Imaging.dll
+C:\Users\Ehsan\Desktop\Automation\Face Detection\sources\bin\x86\Release\AForge.Math.dll
+C:\Users\Ehsan\Desktop\Automation\Face Detection\sources\obj\x86\Release\FaceDetection.Properties.Resources.resources
+C:\Users\Ehsan\Desktop\Automation\Face Detection\sources\obj\x86\Release\Face detection (Viola-Jones).exe
+C:\Users\Ehsan\Desktop\Automation\Face Detection\sources\obj\x86\Release\Face detection (Viola-Jones).pdb

@@ -1,0 +1,287 @@
+c:\documents and settings\apereira\my documents\visual studio 2010\Projects\CameraEthernet\CameraEthernet\bin\Debug\le\CameraEthernet.exe
+c:\documents and settings\apereira\my documents\visual studio 2010\Projects\CameraEthernet\CameraEthernet\bin\Debug\be\CameraEthernet.exe
+c:\documents and settings\apereira\my documents\visual studio 2010\Projects\CameraEthernet\CameraEthernet\bin\Debug\le\CameraEthernet.pdb
+c:\documents and settings\apereira\my documents\visual studio 2010\Projects\CameraEthernet\CameraEthernet\bin\Debug\be\CameraEthernet.pdb
+c:\documents and settings\apereira\my documents\visual studio 2010\Projects\CameraEthernet\CameraEthernet\bin\Debug\CameraEthernet.exe
+c:\documents and settings\apereira\my documents\visual studio 2010\Projects\CameraEthernet\CameraEthernet\bin\Debug\CameraEthernet.pdb
+c:\documents and settings\apereira\my documents\visual studio 2010\Projects\CameraEthernet\CameraEthernet\bin\Debug\le\CameraEthernet.pe
+c:\documents and settings\apereira\my documents\visual studio 2010\Projects\CameraEthernet\CameraEthernet\bin\Debug\le\CameraEthernet.pdbx
+c:\documents and settings\apereira\my documents\visual studio 2010\Projects\CameraEthernet\CameraEthernet\bin\Debug\be\CameraEthernet.pe
+c:\documents and settings\apereira\my documents\visual studio 2010\Projects\CameraEthernet\CameraEthernet\bin\Debug\be\CameraEthernet.pdbx
+c:\documents and settings\apereira\my documents\visual studio 2010\Projects\CameraEthernet\CameraEthernet\bin\Debug\LE\Gadgeteer.pe
+c:\documents and settings\apereira\my documents\visual studio 2010\Projects\CameraEthernet\CameraEthernet\bin\Debug\LE\Gadgeteer.WebClient.pe
+c:\documents and settings\apereira\my documents\visual studio 2010\Projects\CameraEthernet\CameraEthernet\bin\Debug\LE\Gadgeteer.WebServer.pe
+c:\documents and settings\apereira\my documents\visual studio 2010\Projects\CameraEthernet\CameraEthernet\bin\Debug\LE\GHIElectronics.Gadgeteer.FEZSpider.pe
+c:\documents and settings\apereira\my documents\visual studio 2010\Projects\CameraEthernet\CameraEthernet\bin\Debug\LE\GTM.GHIElectronics.Camera.pe
+c:\documents and settings\apereira\my documents\visual studio 2010\Projects\CameraEthernet\CameraEthernet\bin\Debug\LE\GTM.GHIElectronics.Ethernet_J11D.pe
+c:\documents and settings\apereira\my documents\visual studio 2010\Projects\CameraEthernet\CameraEthernet\bin\Debug\LE\GHIElectronics.NETMF.Hardware.pe
+c:\documents and settings\apereira\my documents\visual studio 2010\Projects\CameraEthernet\CameraEthernet\bin\Debug\LE\GHIElectronics.NETMF.System.pe
+c:\documents and settings\apereira\my documents\visual studio 2010\Projects\CameraEthernet\CameraEthernet\bin\Debug\LE\GHIElectronics.NETMF.USBHost.pe
+c:\documents and settings\apereira\my documents\visual studio 2010\Projects\CameraEthernet\CameraEthernet\bin\Debug\LE\GHIElectronics.NETMF.Net.pe
+c:\documents and settings\apereira\my documents\visual studio 2010\Projects\CameraEthernet\CameraEthernet\bin\Debug\BE\Gadgeteer.pe
+c:\documents and settings\apereira\my documents\visual studio 2010\Projects\CameraEthernet\CameraEthernet\bin\Debug\BE\Gadgeteer.WebClient.pe
+c:\documents and settings\apereira\my documents\visual studio 2010\Projects\CameraEthernet\CameraEthernet\bin\Debug\BE\Gadgeteer.WebServer.pe
+c:\documents and settings\apereira\my documents\visual studio 2010\Projects\CameraEthernet\CameraEthernet\bin\Debug\BE\GHIElectronics.Gadgeteer.FEZSpider.pe
+c:\documents and settings\apereira\my documents\visual studio 2010\Projects\CameraEthernet\CameraEthernet\bin\Debug\BE\GTM.GHIElectronics.Camera.pe
+c:\documents and settings\apereira\my documents\visual studio 2010\Projects\CameraEthernet\CameraEthernet\bin\Debug\BE\GTM.GHIElectronics.Ethernet_J11D.pe
+c:\documents and settings\apereira\my documents\visual studio 2010\Projects\CameraEthernet\CameraEthernet\bin\Debug\BE\GHIElectronics.NETMF.Hardware.pe
+c:\documents and settings\apereira\my documents\visual studio 2010\Projects\CameraEthernet\CameraEthernet\bin\Debug\BE\GHIElectronics.NETMF.System.pe
+c:\documents and settings\apereira\my documents\visual studio 2010\Projects\CameraEthernet\CameraEthernet\bin\Debug\BE\GHIElectronics.NETMF.USBHost.pe
+c:\documents and settings\apereira\my documents\visual studio 2010\Projects\CameraEthernet\CameraEthernet\bin\Debug\BE\GHIElectronics.NETMF.Net.pe
+c:\documents and settings\apereira\my documents\visual studio 2010\Projects\CameraEthernet\CameraEthernet\bin\Debug\LE\Gadgeteer.pdbx
+c:\documents and settings\apereira\my documents\visual studio 2010\Projects\CameraEthernet\CameraEthernet\bin\Debug\LE\Gadgeteer.WebClient.pdbx
+c:\documents and settings\apereira\my documents\visual studio 2010\Projects\CameraEthernet\CameraEthernet\bin\Debug\LE\Gadgeteer.WebServer.pdbx
+c:\documents and settings\apereira\my documents\visual studio 2010\Projects\CameraEthernet\CameraEthernet\bin\Debug\LE\GHIElectronics.Gadgeteer.FEZSpider.pdbx
+c:\documents and settings\apereira\my documents\visual studio 2010\Projects\CameraEthernet\CameraEthernet\bin\Debug\LE\GTM.GHIElectronics.Camera.pdbx
+c:\documents and settings\apereira\my documents\visual studio 2010\Projects\CameraEthernet\CameraEthernet\bin\Debug\LE\GTM.GHIElectronics.Ethernet_J11D.pdbx
+c:\documents and settings\apereira\my documents\visual studio 2010\Projects\CameraEthernet\CameraEthernet\bin\Debug\LE\GHIElectronics.NETMF.Hardware.pdbx
+c:\documents and settings\apereira\my documents\visual studio 2010\Projects\CameraEthernet\CameraEthernet\bin\Debug\LE\GHIElectronics.NETMF.System.pdbx
+c:\documents and settings\apereira\my documents\visual studio 2010\Projects\CameraEthernet\CameraEthernet\bin\Debug\LE\GHIElectronics.NETMF.USBHost.pdbx
+c:\documents and settings\apereira\my documents\visual studio 2010\Projects\CameraEthernet\CameraEthernet\bin\Debug\LE\GHIElectronics.NETMF.Net.pdbx
+c:\documents and settings\apereira\my documents\visual studio 2010\Projects\CameraEthernet\CameraEthernet\bin\Debug\BE\Gadgeteer.pdbx
+c:\documents and settings\apereira\my documents\visual studio 2010\Projects\CameraEthernet\CameraEthernet\bin\Debug\BE\Gadgeteer.WebClient.pdbx
+c:\documents and settings\apereira\my documents\visual studio 2010\Projects\CameraEthernet\CameraEthernet\bin\Debug\BE\Gadgeteer.WebServer.pdbx
+c:\documents and settings\apereira\my documents\visual studio 2010\Projects\CameraEthernet\CameraEthernet\bin\Debug\BE\GHIElectronics.Gadgeteer.FEZSpider.pdbx
+c:\documents and settings\apereira\my documents\visual studio 2010\Projects\CameraEthernet\CameraEthernet\bin\Debug\BE\GTM.GHIElectronics.Camera.pdbx
+c:\documents and settings\apereira\my documents\visual studio 2010\Projects\CameraEthernet\CameraEthernet\bin\Debug\BE\GTM.GHIElectronics.Ethernet_J11D.pdbx
+c:\documents and settings\apereira\my documents\visual studio 2010\Projects\CameraEthernet\CameraEthernet\bin\Debug\BE\GHIElectronics.NETMF.Hardware.pdbx
+c:\documents and settings\apereira\my documents\visual studio 2010\Projects\CameraEthernet\CameraEthernet\bin\Debug\BE\GHIElectronics.NETMF.System.pdbx
+c:\documents and settings\apereira\my documents\visual studio 2010\Projects\CameraEthernet\CameraEthernet\bin\Debug\BE\GHIElectronics.NETMF.USBHost.pdbx
+c:\documents and settings\apereira\my documents\visual studio 2010\Projects\CameraEthernet\CameraEthernet\bin\Debug\BE\GHIElectronics.NETMF.Net.pdbx
+c:\documents and settings\apereira\my documents\visual studio 2010\Projects\CameraEthernet\CameraEthernet\bin\Debug\Gadgeteer.dll
+c:\documents and settings\apereira\my documents\visual studio 2010\Projects\CameraEthernet\CameraEthernet\bin\Debug\Gadgeteer.WebClient.dll
+c:\documents and settings\apereira\my documents\visual studio 2010\Projects\CameraEthernet\CameraEthernet\bin\Debug\Gadgeteer.WebServer.dll
+c:\documents and settings\apereira\my documents\visual studio 2010\Projects\CameraEthernet\CameraEthernet\bin\Debug\GHIElectronics.Gadgeteer.FEZSpider.dll
+c:\documents and settings\apereira\my documents\visual studio 2010\Projects\CameraEthernet\CameraEthernet\bin\Debug\GTM.GHIElectronics.Camera.dll
+c:\documents and settings\apereira\my documents\visual studio 2010\Projects\CameraEthernet\CameraEthernet\bin\Debug\GTM.GHIElectronics.Ethernet_J11D.dll
+c:\documents and settings\apereira\my documents\visual studio 2010\Projects\CameraEthernet\CameraEthernet\bin\Debug\GHIElectronics.NETMF.Hardware.dll
+c:\documents and settings\apereira\my documents\visual studio 2010\Projects\CameraEthernet\CameraEthernet\bin\Debug\GHIElectronics.NETMF.System.dll
+c:\documents and settings\apereira\my documents\visual studio 2010\Projects\CameraEthernet\CameraEthernet\bin\Debug\GHIElectronics.NETMF.USBHost.dll
+c:\documents and settings\apereira\my documents\visual studio 2010\Projects\CameraEthernet\CameraEthernet\bin\Debug\GHIElectronics.NETMF.Net.dll
+c:\documents and settings\apereira\my documents\visual studio 2010\Projects\CameraEthernet\CameraEthernet\bin\Debug\Gadgeteer.pdb
+c:\documents and settings\apereira\my documents\visual studio 2010\Projects\CameraEthernet\CameraEthernet\bin\Debug\Gadgeteer.xml
+c:\documents and settings\apereira\my documents\visual studio 2010\Projects\CameraEthernet\CameraEthernet\bin\Debug\GHIElectronics.Gadgeteer.FEZSpider.pdb
+c:\documents and settings\apereira\my documents\visual studio 2010\Projects\CameraEthernet\CameraEthernet\bin\Debug\GHIElectronics.Gadgeteer.FEZSpider.xml
+c:\documents and settings\apereira\my documents\visual studio 2010\Projects\CameraEthernet\CameraEthernet\bin\Debug\GTM.GHIElectronics.Camera.pdb
+c:\documents and settings\apereira\my documents\visual studio 2010\Projects\CameraEthernet\CameraEthernet\bin\Debug\GTM.GHIElectronics.Camera.xml
+c:\documents and settings\apereira\my documents\visual studio 2010\Projects\CameraEthernet\CameraEthernet\bin\Debug\GTM.GHIElectronics.Ethernet_J11D.pdb
+c:\documents and settings\apereira\my documents\visual studio 2010\Projects\CameraEthernet\CameraEthernet\bin\Debug\GTM.GHIElectronics.Ethernet_J11D.xml
+c:\documents and settings\apereira\my documents\visual studio 2010\Projects\CameraEthernet\CameraEthernet\bin\Debug\GHIElectronics.NETMF.Hardware.xml
+c:\documents and settings\apereira\my documents\visual studio 2010\Projects\CameraEthernet\CameraEthernet\bin\Debug\GHIElectronics.NETMF.System.xml
+c:\documents and settings\apereira\my documents\visual studio 2010\Projects\CameraEthernet\CameraEthernet\bin\Debug\GHIElectronics.NETMF.USBHost.xml
+c:\documents and settings\apereira\my documents\visual studio 2010\Projects\CameraEthernet\CameraEthernet\bin\Debug\GHIElectronics.NETMF.Net.xml
+c:\documents and settings\apereira\my documents\visual studio 2010\Projects\CameraEthernet\CameraEthernet\obj\Debug\ResolveAssemblyReference.cache
+c:\documents and settings\apereira\my documents\visual studio 2010\Projects\CameraEthernet\CameraEthernet\obj\Debug\TinyCLR_DebugReferences.cache
+c:\documents and settings\apereira\my documents\visual studio 2010\Projects\CameraEthernet\CameraEthernet\obj\Debug\CameraEthernet.Resources.resources
+c:\documents and settings\apereira\my documents\visual studio 2010\Projects\CameraEthernet\CameraEthernet\obj\Debug\GenerateResource.read.1.tlog
+c:\documents and settings\apereira\my documents\visual studio 2010\Projects\CameraEthernet\CameraEthernet\obj\Debug\GenerateResource.write.1.tlog
+c:\documents and settings\apereira\my documents\visual studio 2010\Projects\CameraEthernet\CameraEthernet\obj\Debug\CameraEthernet.Resources.tinyresources
+c:\documents and settings\apereira\my documents\visual studio 2010\Projects\CameraEthernet\CameraEthernet\obj\Debug\TinyResGen.cache
+c:\documents and settings\apereira\my documents\visual studio 2010\Projects\CameraEthernet\CameraEthernet\obj\Debug\be\CameraEthernet.pe
+c:\documents and settings\apereira\my documents\visual studio 2010\Projects\CameraEthernet\CameraEthernet\obj\Debug\be\CameraEthernet.pdbx
+c:\documents and settings\apereira\my documents\visual studio 2010\Projects\CameraEthernet\CameraEthernet\obj\Debug\le\CameraEthernet.pe
+c:\documents and settings\apereira\my documents\visual studio 2010\Projects\CameraEthernet\CameraEthernet\obj\Debug\le\CameraEthernet.pdbx
+c:\documents and settings\apereira\my documents\visual studio 2010\Projects\CameraEthernet\CameraEthernet\obj\Debug\CameraEthernet.exe
+c:\documents and settings\apereira\my documents\visual studio 2010\Projects\CameraEthernet\CameraEthernet\obj\Debug\CameraEthernet.pdb
+C:\Users\Ehsan\Downloads\CameraEthernet\CameraEthernet\bin\Debug\le\CameraEthernet.exe
+C:\Users\Ehsan\Downloads\CameraEthernet\CameraEthernet\bin\Debug\be\CameraEthernet.exe
+C:\Users\Ehsan\Downloads\CameraEthernet\CameraEthernet\bin\Debug\le\CameraEthernet.pdb
+C:\Users\Ehsan\Downloads\CameraEthernet\CameraEthernet\bin\Debug\be\CameraEthernet.pdb
+C:\Users\Ehsan\Downloads\CameraEthernet\CameraEthernet\bin\Debug\CameraEthernet.exe
+C:\Users\Ehsan\Downloads\CameraEthernet\CameraEthernet\bin\Debug\CameraEthernet.pdb
+C:\Users\Ehsan\Downloads\CameraEthernet\CameraEthernet\bin\Debug\le\CameraEthernet.pe
+C:\Users\Ehsan\Downloads\CameraEthernet\CameraEthernet\bin\Debug\le\CameraEthernet.pdbx
+C:\Users\Ehsan\Downloads\CameraEthernet\CameraEthernet\bin\Debug\be\CameraEthernet.pe
+C:\Users\Ehsan\Downloads\CameraEthernet\CameraEthernet\bin\Debug\be\CameraEthernet.pdbx
+C:\Users\Ehsan\Downloads\CameraEthernet\CameraEthernet\bin\Debug\LE\Gadgeteer.pe
+C:\Users\Ehsan\Downloads\CameraEthernet\CameraEthernet\bin\Debug\LE\Gadgeteer.SPI.pe
+C:\Users\Ehsan\Downloads\CameraEthernet\CameraEthernet\bin\Debug\LE\Gadgeteer.WebClient.pe
+C:\Users\Ehsan\Downloads\CameraEthernet\CameraEthernet\bin\Debug\LE\Gadgeteer.WebServer.pe
+C:\Users\Ehsan\Downloads\CameraEthernet\CameraEthernet\bin\Debug\LE\GHI.Hardware.pe
+C:\Users\Ehsan\Downloads\CameraEthernet\CameraEthernet\bin\Debug\LE\GHI.Networking.pe
+C:\Users\Ehsan\Downloads\CameraEthernet\CameraEthernet\bin\Debug\LE\GHI.Usb.pe
+C:\Users\Ehsan\Downloads\CameraEthernet\CameraEthernet\bin\Debug\LE\GHIElectronics.Gadgeteer.FEZSpider.pe
+C:\Users\Ehsan\Downloads\CameraEthernet\CameraEthernet\bin\Debug\LE\GTM.GHIElectronics.Camera.pe
+C:\Users\Ehsan\Downloads\CameraEthernet\CameraEthernet\bin\Debug\LE\GTM.GHIElectronics.EthernetJ11D.pe
+C:\Users\Ehsan\Downloads\CameraEthernet\CameraEthernet\bin\Debug\LE\GTM.GHIElectronics.USBClientEDP.pe
+C:\Users\Ehsan\Downloads\CameraEthernet\CameraEthernet\bin\Debug\BE\Gadgeteer.pe
+C:\Users\Ehsan\Downloads\CameraEthernet\CameraEthernet\bin\Debug\BE\Gadgeteer.SPI.pe
+C:\Users\Ehsan\Downloads\CameraEthernet\CameraEthernet\bin\Debug\BE\Gadgeteer.WebClient.pe
+C:\Users\Ehsan\Downloads\CameraEthernet\CameraEthernet\bin\Debug\BE\Gadgeteer.WebServer.pe
+C:\Users\Ehsan\Downloads\CameraEthernet\CameraEthernet\bin\Debug\BE\GHI.Hardware.pe
+C:\Users\Ehsan\Downloads\CameraEthernet\CameraEthernet\bin\Debug\BE\GHI.Networking.pe
+C:\Users\Ehsan\Downloads\CameraEthernet\CameraEthernet\bin\Debug\BE\GHI.Usb.pe
+C:\Users\Ehsan\Downloads\CameraEthernet\CameraEthernet\bin\Debug\BE\GHIElectronics.Gadgeteer.FEZSpider.pe
+C:\Users\Ehsan\Downloads\CameraEthernet\CameraEthernet\bin\Debug\BE\GTM.GHIElectronics.Camera.pe
+C:\Users\Ehsan\Downloads\CameraEthernet\CameraEthernet\bin\Debug\BE\GTM.GHIElectronics.EthernetJ11D.pe
+C:\Users\Ehsan\Downloads\CameraEthernet\CameraEthernet\bin\Debug\BE\GTM.GHIElectronics.USBClientEDP.pe
+C:\Users\Ehsan\Downloads\CameraEthernet\CameraEthernet\bin\Debug\LE\Gadgeteer.pdbx
+C:\Users\Ehsan\Downloads\CameraEthernet\CameraEthernet\bin\Debug\LE\Gadgeteer.SPI.pdbx
+C:\Users\Ehsan\Downloads\CameraEthernet\CameraEthernet\bin\Debug\LE\Gadgeteer.WebClient.pdbx
+C:\Users\Ehsan\Downloads\CameraEthernet\CameraEthernet\bin\Debug\LE\Gadgeteer.WebServer.pdbx
+C:\Users\Ehsan\Downloads\CameraEthernet\CameraEthernet\bin\Debug\LE\GHI.Hardware.pdbx
+C:\Users\Ehsan\Downloads\CameraEthernet\CameraEthernet\bin\Debug\LE\GHI.Networking.pdbx
+C:\Users\Ehsan\Downloads\CameraEthernet\CameraEthernet\bin\Debug\LE\GHI.Usb.pdbx
+C:\Users\Ehsan\Downloads\CameraEthernet\CameraEthernet\bin\Debug\LE\GHIElectronics.Gadgeteer.FEZSpider.pdbx
+C:\Users\Ehsan\Downloads\CameraEthernet\CameraEthernet\bin\Debug\LE\GTM.GHIElectronics.Camera.pdbx
+C:\Users\Ehsan\Downloads\CameraEthernet\CameraEthernet\bin\Debug\LE\GTM.GHIElectronics.EthernetJ11D.pdbx
+C:\Users\Ehsan\Downloads\CameraEthernet\CameraEthernet\bin\Debug\LE\GTM.GHIElectronics.USBClientEDP.pdbx
+C:\Users\Ehsan\Downloads\CameraEthernet\CameraEthernet\bin\Debug\BE\Gadgeteer.pdbx
+C:\Users\Ehsan\Downloads\CameraEthernet\CameraEthernet\bin\Debug\BE\Gadgeteer.SPI.pdbx
+C:\Users\Ehsan\Downloads\CameraEthernet\CameraEthernet\bin\Debug\BE\Gadgeteer.WebClient.pdbx
+C:\Users\Ehsan\Downloads\CameraEthernet\CameraEthernet\bin\Debug\BE\Gadgeteer.WebServer.pdbx
+C:\Users\Ehsan\Downloads\CameraEthernet\CameraEthernet\bin\Debug\BE\GHI.Hardware.pdbx
+C:\Users\Ehsan\Downloads\CameraEthernet\CameraEthernet\bin\Debug\BE\GHI.Networking.pdbx
+C:\Users\Ehsan\Downloads\CameraEthernet\CameraEthernet\bin\Debug\BE\GHI.Usb.pdbx
+C:\Users\Ehsan\Downloads\CameraEthernet\CameraEthernet\bin\Debug\BE\GHIElectronics.Gadgeteer.FEZSpider.pdbx
+C:\Users\Ehsan\Downloads\CameraEthernet\CameraEthernet\bin\Debug\BE\GTM.GHIElectronics.Camera.pdbx
+C:\Users\Ehsan\Downloads\CameraEthernet\CameraEthernet\bin\Debug\BE\GTM.GHIElectronics.EthernetJ11D.pdbx
+C:\Users\Ehsan\Downloads\CameraEthernet\CameraEthernet\bin\Debug\BE\GTM.GHIElectronics.USBClientEDP.pdbx
+C:\Users\Ehsan\Downloads\CameraEthernet\CameraEthernet\bin\Debug\Gadgeteer.dll
+C:\Users\Ehsan\Downloads\CameraEthernet\CameraEthernet\bin\Debug\Gadgeteer.SPI.dll
+C:\Users\Ehsan\Downloads\CameraEthernet\CameraEthernet\bin\Debug\Gadgeteer.WebClient.dll
+C:\Users\Ehsan\Downloads\CameraEthernet\CameraEthernet\bin\Debug\Gadgeteer.WebServer.dll
+C:\Users\Ehsan\Downloads\CameraEthernet\CameraEthernet\bin\Debug\GHI.Hardware.dll
+C:\Users\Ehsan\Downloads\CameraEthernet\CameraEthernet\bin\Debug\GHI.Networking.dll
+C:\Users\Ehsan\Downloads\CameraEthernet\CameraEthernet\bin\Debug\GHI.Usb.dll
+C:\Users\Ehsan\Downloads\CameraEthernet\CameraEthernet\bin\Debug\GHIElectronics.Gadgeteer.FEZSpider.dll
+C:\Users\Ehsan\Downloads\CameraEthernet\CameraEthernet\bin\Debug\GTM.GHIElectronics.Camera.dll
+C:\Users\Ehsan\Downloads\CameraEthernet\CameraEthernet\bin\Debug\GTM.GHIElectronics.EthernetJ11D.dll
+C:\Users\Ehsan\Downloads\CameraEthernet\CameraEthernet\bin\Debug\GTM.GHIElectronics.USBClientEDP.dll
+C:\Users\Ehsan\Downloads\CameraEthernet\CameraEthernet\bin\Debug\Gadgeteer.pdb
+C:\Users\Ehsan\Downloads\CameraEthernet\CameraEthernet\bin\Debug\Gadgeteer.xml
+C:\Users\Ehsan\Downloads\CameraEthernet\CameraEthernet\bin\Debug\Gadgeteer.SPI.pdb
+C:\Users\Ehsan\Downloads\CameraEthernet\CameraEthernet\bin\Debug\Gadgeteer.SPI.xml
+C:\Users\Ehsan\Downloads\CameraEthernet\CameraEthernet\bin\Debug\Gadgeteer.WebClient.pdb
+C:\Users\Ehsan\Downloads\CameraEthernet\CameraEthernet\bin\Debug\Gadgeteer.WebClient.xml
+C:\Users\Ehsan\Downloads\CameraEthernet\CameraEthernet\bin\Debug\Gadgeteer.WebServer.pdb
+C:\Users\Ehsan\Downloads\CameraEthernet\CameraEthernet\bin\Debug\Gadgeteer.WebServer.xml
+C:\Users\Ehsan\Downloads\CameraEthernet\CameraEthernet\bin\Debug\GHI.Hardware.xml
+C:\Users\Ehsan\Downloads\CameraEthernet\CameraEthernet\bin\Debug\GHI.Networking.xml
+C:\Users\Ehsan\Downloads\CameraEthernet\CameraEthernet\bin\Debug\GHI.Usb.xml
+C:\Users\Ehsan\Downloads\CameraEthernet\CameraEthernet\bin\Debug\GHIElectronics.Gadgeteer.FEZSpider.xml
+C:\Users\Ehsan\Downloads\CameraEthernet\CameraEthernet\bin\Debug\GTM.GHIElectronics.Camera.xml
+C:\Users\Ehsan\Downloads\CameraEthernet\CameraEthernet\bin\Debug\GTM.GHIElectronics.EthernetJ11D.xml
+C:\Users\Ehsan\Downloads\CameraEthernet\CameraEthernet\bin\Debug\GTM.GHIElectronics.USBClientEDP.xml
+C:\Users\Ehsan\Downloads\CameraEthernet\CameraEthernet\obj\Debug\CameraEthernet.csprojResolveAssemblyReference.cache
+C:\Users\Ehsan\Downloads\CameraEthernet\CameraEthernet\obj\Debug\TinyCLR_DebugReferences.cache
+C:\Users\Ehsan\Downloads\CameraEthernet\CameraEthernet\obj\Debug\CameraEthernet.Resources.resources
+C:\Users\Ehsan\Downloads\CameraEthernet\CameraEthernet\obj\Debug\CameraEthernet.csproj.GenerateResource.Cache
+C:\Users\Ehsan\Downloads\CameraEthernet\CameraEthernet\obj\Debug\CameraEthernet.Resources.tinyresources
+C:\Users\Ehsan\Downloads\CameraEthernet\CameraEthernet\obj\Debug\TinyResGen.cache
+C:\Users\Ehsan\Downloads\CameraEthernet\CameraEthernet\obj\Debug\be\CameraEthernet.pe
+C:\Users\Ehsan\Downloads\CameraEthernet\CameraEthernet\obj\Debug\be\CameraEthernet.pdbx
+C:\Users\Ehsan\Downloads\CameraEthernet\CameraEthernet\obj\Debug\le\CameraEthernet.pe
+C:\Users\Ehsan\Downloads\CameraEthernet\CameraEthernet\obj\Debug\le\CameraEthernet.pdbx
+C:\Users\Ehsan\Downloads\CameraEthernet\CameraEthernet\obj\Debug\CameraEthernet.exe
+C:\Users\Ehsan\Downloads\CameraEthernet\CameraEthernet\obj\Debug\CameraEthernet.pdb
+C:\Users\Ehsan\Downloads\CameraEthernet\CameraEthernet\bin\Debug\LE\GTM.GHIElectronics.Button.pe
+C:\Users\Ehsan\Downloads\CameraEthernet\CameraEthernet\bin\Debug\BE\GTM.GHIElectronics.Button.pe
+C:\Users\Ehsan\Downloads\CameraEthernet\CameraEthernet\bin\Debug\LE\GTM.GHIElectronics.Button.pdbx
+C:\Users\Ehsan\Downloads\CameraEthernet\CameraEthernet\bin\Debug\BE\GTM.GHIElectronics.Button.pdbx
+C:\Users\Ehsan\Downloads\CameraEthernet\CameraEthernet\bin\Debug\GTM.GHIElectronics.Button.dll
+C:\Users\Ehsan\Downloads\CameraEthernet\CameraEthernet\bin\Debug\GTM.GHIElectronics.Button.xml
+C:\Users\Ehsan\Documents\Visual Studio 2013\Projects\CameraEthernet\CameraEthernet\obj\Debug\CameraEthernet.Resources.resources
+C:\Users\Ehsan\Documents\Visual Studio 2013\Projects\CameraEthernet\CameraEthernet\obj\Debug\CameraEthernet.csproj.GenerateResource.Cache
+C:\Users\Ehsan\Documents\Visual Studio 2013\Projects\CameraEthernet\CameraEthernet\obj\Debug\CameraEthernet.exe
+C:\Users\Ehsan\Documents\Visual Studio 2013\Projects\CameraEthernet\CameraEthernet\obj\Debug\CameraEthernet.pdb
+C:\Users\Ehsan\Documents\Visual Studio 2013\Projects\CameraEthernet\CameraEthernet\bin\Debug\le\CameraEthernet.exe
+C:\Users\Ehsan\Documents\Visual Studio 2013\Projects\CameraEthernet\CameraEthernet\bin\Debug\be\CameraEthernet.exe
+C:\Users\Ehsan\Documents\Visual Studio 2013\Projects\CameraEthernet\CameraEthernet\bin\Debug\le\CameraEthernet.pdb
+C:\Users\Ehsan\Documents\Visual Studio 2013\Projects\CameraEthernet\CameraEthernet\bin\Debug\be\CameraEthernet.pdb
+C:\Users\Ehsan\Documents\Visual Studio 2013\Projects\CameraEthernet\CameraEthernet\bin\Debug\CameraEthernet.exe
+C:\Users\Ehsan\Documents\Visual Studio 2013\Projects\CameraEthernet\CameraEthernet\bin\Debug\CameraEthernet.pdb
+C:\Users\Ehsan\Documents\Visual Studio 2013\Projects\CameraEthernet\CameraEthernet\bin\Debug\le\CameraEthernet.pe
+C:\Users\Ehsan\Documents\Visual Studio 2013\Projects\CameraEthernet\CameraEthernet\bin\Debug\le\CameraEthernet.pdbx
+C:\Users\Ehsan\Documents\Visual Studio 2013\Projects\CameraEthernet\CameraEthernet\bin\Debug\be\CameraEthernet.pe
+C:\Users\Ehsan\Documents\Visual Studio 2013\Projects\CameraEthernet\CameraEthernet\bin\Debug\be\CameraEthernet.pdbx
+C:\Users\Ehsan\Documents\Visual Studio 2013\Projects\CameraEthernet\CameraEthernet\bin\Debug\LE\Gadgeteer.pe
+C:\Users\Ehsan\Documents\Visual Studio 2013\Projects\CameraEthernet\CameraEthernet\bin\Debug\LE\Gadgeteer.SPI.pe
+C:\Users\Ehsan\Documents\Visual Studio 2013\Projects\CameraEthernet\CameraEthernet\bin\Debug\LE\Gadgeteer.WebClient.pe
+C:\Users\Ehsan\Documents\Visual Studio 2013\Projects\CameraEthernet\CameraEthernet\bin\Debug\LE\Gadgeteer.WebServer.pe
+C:\Users\Ehsan\Documents\Visual Studio 2013\Projects\CameraEthernet\CameraEthernet\bin\Debug\LE\GHI.Hardware.pe
+C:\Users\Ehsan\Documents\Visual Studio 2013\Projects\CameraEthernet\CameraEthernet\bin\Debug\LE\GHI.Networking.pe
+C:\Users\Ehsan\Documents\Visual Studio 2013\Projects\CameraEthernet\CameraEthernet\bin\Debug\LE\GHI.Usb.pe
+C:\Users\Ehsan\Documents\Visual Studio 2013\Projects\CameraEthernet\CameraEthernet\bin\Debug\LE\GHIElectronics.Gadgeteer.FEZSpider.pe
+C:\Users\Ehsan\Documents\Visual Studio 2013\Projects\CameraEthernet\CameraEthernet\bin\Debug\LE\GTM.GHIElectronics.Button.pe
+C:\Users\Ehsan\Documents\Visual Studio 2013\Projects\CameraEthernet\CameraEthernet\bin\Debug\LE\GTM.GHIElectronics.Camera.pe
+C:\Users\Ehsan\Documents\Visual Studio 2013\Projects\CameraEthernet\CameraEthernet\bin\Debug\LE\GTM.GHIElectronics.EthernetJ11D.pe
+C:\Users\Ehsan\Documents\Visual Studio 2013\Projects\CameraEthernet\CameraEthernet\bin\Debug\LE\GTM.GHIElectronics.USBClientEDP.pe
+C:\Users\Ehsan\Documents\Visual Studio 2013\Projects\CameraEthernet\CameraEthernet\bin\Debug\BE\Gadgeteer.pe
+C:\Users\Ehsan\Documents\Visual Studio 2013\Projects\CameraEthernet\CameraEthernet\bin\Debug\BE\Gadgeteer.SPI.pe
+C:\Users\Ehsan\Documents\Visual Studio 2013\Projects\CameraEthernet\CameraEthernet\bin\Debug\BE\Gadgeteer.WebClient.pe
+C:\Users\Ehsan\Documents\Visual Studio 2013\Projects\CameraEthernet\CameraEthernet\bin\Debug\BE\Gadgeteer.WebServer.pe
+C:\Users\Ehsan\Documents\Visual Studio 2013\Projects\CameraEthernet\CameraEthernet\bin\Debug\BE\GHI.Hardware.pe
+C:\Users\Ehsan\Documents\Visual Studio 2013\Projects\CameraEthernet\CameraEthernet\bin\Debug\BE\GHI.Networking.pe
+C:\Users\Ehsan\Documents\Visual Studio 2013\Projects\CameraEthernet\CameraEthernet\bin\Debug\BE\GHI.Usb.pe
+C:\Users\Ehsan\Documents\Visual Studio 2013\Projects\CameraEthernet\CameraEthernet\bin\Debug\BE\GHIElectronics.Gadgeteer.FEZSpider.pe
+C:\Users\Ehsan\Documents\Visual Studio 2013\Projects\CameraEthernet\CameraEthernet\bin\Debug\BE\GTM.GHIElectronics.Button.pe
+C:\Users\Ehsan\Documents\Visual Studio 2013\Projects\CameraEthernet\CameraEthernet\bin\Debug\BE\GTM.GHIElectronics.Camera.pe
+C:\Users\Ehsan\Documents\Visual Studio 2013\Projects\CameraEthernet\CameraEthernet\bin\Debug\BE\GTM.GHIElectronics.EthernetJ11D.pe
+C:\Users\Ehsan\Documents\Visual Studio 2013\Projects\CameraEthernet\CameraEthernet\bin\Debug\BE\GTM.GHIElectronics.USBClientEDP.pe
+C:\Users\Ehsan\Documents\Visual Studio 2013\Projects\CameraEthernet\CameraEthernet\bin\Debug\LE\Gadgeteer.pdbx
+C:\Users\Ehsan\Documents\Visual Studio 2013\Projects\CameraEthernet\CameraEthernet\bin\Debug\LE\Gadgeteer.SPI.pdbx
+C:\Users\Ehsan\Documents\Visual Studio 2013\Projects\CameraEthernet\CameraEthernet\bin\Debug\LE\Gadgeteer.WebClient.pdbx
+C:\Users\Ehsan\Documents\Visual Studio 2013\Projects\CameraEthernet\CameraEthernet\bin\Debug\LE\Gadgeteer.WebServer.pdbx
+C:\Users\Ehsan\Documents\Visual Studio 2013\Projects\CameraEthernet\CameraEthernet\bin\Debug\LE\GHI.Hardware.pdbx
+C:\Users\Ehsan\Documents\Visual Studio 2013\Projects\CameraEthernet\CameraEthernet\bin\Debug\LE\GHI.Networking.pdbx
+C:\Users\Ehsan\Documents\Visual Studio 2013\Projects\CameraEthernet\CameraEthernet\bin\Debug\LE\GHI.Usb.pdbx
+C:\Users\Ehsan\Documents\Visual Studio 2013\Projects\CameraEthernet\CameraEthernet\bin\Debug\LE\GHIElectronics.Gadgeteer.FEZSpider.pdbx
+C:\Users\Ehsan\Documents\Visual Studio 2013\Projects\CameraEthernet\CameraEthernet\bin\Debug\LE\GTM.GHIElectronics.Button.pdbx
+C:\Users\Ehsan\Documents\Visual Studio 2013\Projects\CameraEthernet\CameraEthernet\bin\Debug\LE\GTM.GHIElectronics.Camera.pdbx
+C:\Users\Ehsan\Documents\Visual Studio 2013\Projects\CameraEthernet\CameraEthernet\bin\Debug\LE\GTM.GHIElectronics.EthernetJ11D.pdbx
+C:\Users\Ehsan\Documents\Visual Studio 2013\Projects\CameraEthernet\CameraEthernet\bin\Debug\LE\GTM.GHIElectronics.USBClientEDP.pdbx
+C:\Users\Ehsan\Documents\Visual Studio 2013\Projects\CameraEthernet\CameraEthernet\bin\Debug\BE\Gadgeteer.pdbx
+C:\Users\Ehsan\Documents\Visual Studio 2013\Projects\CameraEthernet\CameraEthernet\bin\Debug\BE\Gadgeteer.SPI.pdbx
+C:\Users\Ehsan\Documents\Visual Studio 2013\Projects\CameraEthernet\CameraEthernet\bin\Debug\BE\Gadgeteer.WebClient.pdbx
+C:\Users\Ehsan\Documents\Visual Studio 2013\Projects\CameraEthernet\CameraEthernet\bin\Debug\BE\Gadgeteer.WebServer.pdbx
+C:\Users\Ehsan\Documents\Visual Studio 2013\Projects\CameraEthernet\CameraEthernet\bin\Debug\BE\GHI.Hardware.pdbx
+C:\Users\Ehsan\Documents\Visual Studio 2013\Projects\CameraEthernet\CameraEthernet\bin\Debug\BE\GHI.Networking.pdbx
+C:\Users\Ehsan\Documents\Visual Studio 2013\Projects\CameraEthernet\CameraEthernet\bin\Debug\BE\GHI.Usb.pdbx
+C:\Users\Ehsan\Documents\Visual Studio 2013\Projects\CameraEthernet\CameraEthernet\bin\Debug\BE\GHIElectronics.Gadgeteer.FEZSpider.pdbx
+C:\Users\Ehsan\Documents\Visual Studio 2013\Projects\CameraEthernet\CameraEthernet\bin\Debug\BE\GTM.GHIElectronics.Button.pdbx
+C:\Users\Ehsan\Documents\Visual Studio 2013\Projects\CameraEthernet\CameraEthernet\bin\Debug\BE\GTM.GHIElectronics.Camera.pdbx
+C:\Users\Ehsan\Documents\Visual Studio 2013\Projects\CameraEthernet\CameraEthernet\bin\Debug\BE\GTM.GHIElectronics.EthernetJ11D.pdbx
+C:\Users\Ehsan\Documents\Visual Studio 2013\Projects\CameraEthernet\CameraEthernet\bin\Debug\BE\GTM.GHIElectronics.USBClientEDP.pdbx
+C:\Users\Ehsan\Documents\Visual Studio 2013\Projects\CameraEthernet\CameraEthernet\bin\Debug\Gadgeteer.dll
+C:\Users\Ehsan\Documents\Visual Studio 2013\Projects\CameraEthernet\CameraEthernet\bin\Debug\Gadgeteer.SPI.dll
+C:\Users\Ehsan\Documents\Visual Studio 2013\Projects\CameraEthernet\CameraEthernet\bin\Debug\Gadgeteer.WebClient.dll
+C:\Users\Ehsan\Documents\Visual Studio 2013\Projects\CameraEthernet\CameraEthernet\bin\Debug\Gadgeteer.WebServer.dll
+C:\Users\Ehsan\Documents\Visual Studio 2013\Projects\CameraEthernet\CameraEthernet\bin\Debug\GHI.Hardware.dll
+C:\Users\Ehsan\Documents\Visual Studio 2013\Projects\CameraEthernet\CameraEthernet\bin\Debug\GHI.Networking.dll
+C:\Users\Ehsan\Documents\Visual Studio 2013\Projects\CameraEthernet\CameraEthernet\bin\Debug\GHI.Usb.dll
+C:\Users\Ehsan\Documents\Visual Studio 2013\Projects\CameraEthernet\CameraEthernet\bin\Debug\GHIElectronics.Gadgeteer.FEZSpider.dll
+C:\Users\Ehsan\Documents\Visual Studio 2013\Projects\CameraEthernet\CameraEthernet\bin\Debug\GTM.GHIElectronics.Button.dll
+C:\Users\Ehsan\Documents\Visual Studio 2013\Projects\CameraEthernet\CameraEthernet\bin\Debug\GTM.GHIElectronics.Camera.dll
+C:\Users\Ehsan\Documents\Visual Studio 2013\Projects\CameraEthernet\CameraEthernet\bin\Debug\GTM.GHIElectronics.EthernetJ11D.dll
+C:\Users\Ehsan\Documents\Visual Studio 2013\Projects\CameraEthernet\CameraEthernet\bin\Debug\GTM.GHIElectronics.USBClientEDP.dll
+C:\Users\Ehsan\Documents\Visual Studio 2013\Projects\CameraEthernet\CameraEthernet\bin\Debug\Gadgeteer.pdb
+C:\Users\Ehsan\Documents\Visual Studio 2013\Projects\CameraEthernet\CameraEthernet\bin\Debug\Gadgeteer.xml
+C:\Users\Ehsan\Documents\Visual Studio 2013\Projects\CameraEthernet\CameraEthernet\bin\Debug\Gadgeteer.SPI.pdb
+C:\Users\Ehsan\Documents\Visual Studio 2013\Projects\CameraEthernet\CameraEthernet\bin\Debug\Gadgeteer.SPI.xml
+C:\Users\Ehsan\Documents\Visual Studio 2013\Projects\CameraEthernet\CameraEthernet\bin\Debug\Gadgeteer.WebClient.pdb
+C:\Users\Ehsan\Documents\Visual Studio 2013\Projects\CameraEthernet\CameraEthernet\bin\Debug\Gadgeteer.WebClient.xml
+C:\Users\Ehsan\Documents\Visual Studio 2013\Projects\CameraEthernet\CameraEthernet\bin\Debug\Gadgeteer.WebServer.pdb
+C:\Users\Ehsan\Documents\Visual Studio 2013\Projects\CameraEthernet\CameraEthernet\bin\Debug\Gadgeteer.WebServer.xml
+C:\Users\Ehsan\Documents\Visual Studio 2013\Projects\CameraEthernet\CameraEthernet\bin\Debug\GHI.Hardware.xml
+C:\Users\Ehsan\Documents\Visual Studio 2013\Projects\CameraEthernet\CameraEthernet\bin\Debug\GHI.Networking.xml
+C:\Users\Ehsan\Documents\Visual Studio 2013\Projects\CameraEthernet\CameraEthernet\bin\Debug\GHI.Usb.xml
+C:\Users\Ehsan\Documents\Visual Studio 2013\Projects\CameraEthernet\CameraEthernet\bin\Debug\GHIElectronics.Gadgeteer.FEZSpider.xml
+C:\Users\Ehsan\Documents\Visual Studio 2013\Projects\CameraEthernet\CameraEthernet\bin\Debug\GTM.GHIElectronics.Button.xml
+C:\Users\Ehsan\Documents\Visual Studio 2013\Projects\CameraEthernet\CameraEthernet\bin\Debug\GTM.GHIElectronics.Camera.xml
+C:\Users\Ehsan\Documents\Visual Studio 2013\Projects\CameraEthernet\CameraEthernet\bin\Debug\GTM.GHIElectronics.EthernetJ11D.xml
+C:\Users\Ehsan\Documents\Visual Studio 2013\Projects\CameraEthernet\CameraEthernet\bin\Debug\GTM.GHIElectronics.USBClientEDP.xml
+C:\Users\Ehsan\Documents\Visual Studio 2013\Projects\CameraEthernet\CameraEthernet\obj\Debug\CameraEthernet.Resources.tinyresources
+C:\Users\Ehsan\Documents\Visual Studio 2013\Projects\CameraEthernet\CameraEthernet\obj\Debug\TinyResGen.cache
+C:\Users\Ehsan\Documents\Visual Studio 2013\Projects\CameraEthernet\CameraEthernet\obj\Debug\be\CameraEthernet.pe
+C:\Users\Ehsan\Documents\Visual Studio 2013\Projects\CameraEthernet\CameraEthernet\obj\Debug\be\CameraEthernet.pdbx
+C:\Users\Ehsan\Documents\Visual Studio 2013\Projects\CameraEthernet\CameraEthernet\obj\Debug\le\CameraEthernet.pe
+C:\Users\Ehsan\Documents\Visual Studio 2013\Projects\CameraEthernet\CameraEthernet\obj\Debug\le\CameraEthernet.pdbx
+C:\Users\Ehsan\Documents\Visual Studio 2013\Projects\CameraEthernet\CameraEthernet\obj\Debug\CameraEthernet.csprojResolveAssemblyReference.cache
+C:\Users\Ehsan\Documents\Visual Studio 2013\Projects\CameraEthernet\CameraEthernet\obj\Debug\TinyCLR_DebugReferences.cache
+C:\Users\Ehsan\Documents\Visual Studio 2013\Projects\CameraEthernet\CameraEthernet\bin\Debug\LE\GTM.GHIElectronics.DisplayTE35.pe
+C:\Users\Ehsan\Documents\Visual Studio 2013\Projects\CameraEthernet\CameraEthernet\bin\Debug\BE\GTM.GHIElectronics.DisplayTE35.pe
+C:\Users\Ehsan\Documents\Visual Studio 2013\Projects\CameraEthernet\CameraEthernet\bin\Debug\LE\GTM.GHIElectronics.DisplayTE35.pdbx
+C:\Users\Ehsan\Documents\Visual Studio 2013\Projects\CameraEthernet\CameraEthernet\bin\Debug\BE\GTM.GHIElectronics.DisplayTE35.pdbx
+C:\Users\Ehsan\Documents\Visual Studio 2013\Projects\CameraEthernet\CameraEthernet\bin\Debug\GTM.GHIElectronics.DisplayTE35.dll
+C:\Users\Ehsan\Documents\Visual Studio 2013\Projects\CameraEthernet\CameraEthernet\bin\Debug\GTM.GHIElectronics.DisplayTE35.xml

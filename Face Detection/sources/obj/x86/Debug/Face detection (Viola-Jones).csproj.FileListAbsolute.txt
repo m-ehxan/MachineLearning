@@ -1,0 +1,42 @@
+C:\Users\Ehsan\Downloads\accord-vision-face-detection-(viola-jones)\sources\obj\x86\Debug\FaceDetection.MainForm.resources
+C:\Users\Ehsan\Downloads\accord-vision-face-detection-(viola-jones)\sources\obj\x86\Debug\FaceDetection.Properties.Resources.resources
+C:\Users\Ehsan\Downloads\accord-vision-face-detection-(viola-jones)\sources\obj\x86\Debug\Face detection (Viola-Jones).csproj.GenerateResource.Cache
+C:\Users\Ehsan\Downloads\accord-vision-face-detection-(viola-jones)\sources\bin\x86\Debug\Face detection (Viola-Jones).exe
+C:\Users\Ehsan\Downloads\accord-vision-face-detection-(viola-jones)\sources\bin\x86\Debug\Face detection (Viola-Jones).pdb
+C:\Users\Ehsan\Downloads\accord-vision-face-detection-(viola-jones)\sources\bin\x86\Debug\Accord.Controls.Vision.dll
+C:\Users\Ehsan\Downloads\accord-vision-face-detection-(viola-jones)\sources\bin\x86\Debug\Accord.dll
+C:\Users\Ehsan\Downloads\accord-vision-face-detection-(viola-jones)\sources\bin\x86\Debug\Accord.Imaging.dll
+C:\Users\Ehsan\Downloads\accord-vision-face-detection-(viola-jones)\sources\bin\x86\Debug\Accord.MachineLearning.dll
+C:\Users\Ehsan\Downloads\accord-vision-face-detection-(viola-jones)\sources\bin\x86\Debug\Accord.Math.dll
+C:\Users\Ehsan\Downloads\accord-vision-face-detection-(viola-jones)\sources\bin\x86\Debug\Accord.Statistics.dll
+C:\Users\Ehsan\Downloads\accord-vision-face-detection-(viola-jones)\sources\bin\x86\Debug\Accord.Vision.dll
+C:\Users\Ehsan\Downloads\accord-vision-face-detection-(viola-jones)\sources\bin\x86\Debug\AForge.dll
+C:\Users\Ehsan\Downloads\accord-vision-face-detection-(viola-jones)\sources\bin\x86\Debug\AForge.Imaging.dll
+C:\Users\Ehsan\Downloads\accord-vision-face-detection-(viola-jones)\sources\bin\x86\Debug\AForge.Math.dll
+C:\Users\Ehsan\Downloads\accord-vision-face-detection-(viola-jones)\sources\obj\x86\Debug\Face detection (Viola-Jones).csprojResolveAssemblyReference.cache
+C:\Users\Ehsan\Downloads\accord-vision-face-detection-(viola-jones)\sources\obj\x86\Debug\Face detection (Viola-Jones).exe
+C:\Users\Ehsan\Downloads\accord-vision-face-detection-(viola-jones)\sources\obj\x86\Debug\Face detection (Viola-Jones).pdb
+C:\Users\Ehsan\Desktop\accord-vision-face-detection-(viola-jones)\sources\obj\x86\Debug\Face detection (Viola-Jones).exe
+C:\Users\Ehsan\Desktop\accord-vision-face-detection-(viola-jones)\sources\obj\x86\Debug\Face detection (Viola-Jones).pdb
+C:\Users\Ehsan\Desktop\accord-vision-face-detection-(viola-jones)\sources\bin\x86\Debug\Face detection (Viola-Jones).exe
+C:\Users\Ehsan\Desktop\accord-vision-face-detection-(viola-jones)\sources\bin\x86\Debug\Face detection (Viola-Jones).pdb
+C:\Users\Ehsan\Desktop\accord-vision-face-detection-(viola-jones)\sources\bin\x86\Debug\Accord.Controls.Vision.dll
+C:\Users\Ehsan\Desktop\accord-vision-face-detection-(viola-jones)\sources\bin\x86\Debug\Accord.dll
+C:\Users\Ehsan\Desktop\accord-vision-face-detection-(viola-jones)\sources\bin\x86\Debug\Accord.Imaging.dll
+C:\Users\Ehsan\Desktop\accord-vision-face-detection-(viola-jones)\sources\bin\x86\Debug\Accord.MachineLearning.dll
+C:\Users\Ehsan\Desktop\accord-vision-face-detection-(viola-jones)\sources\bin\x86\Debug\Accord.Math.dll
+C:\Users\Ehsan\Desktop\accord-vision-face-detection-(viola-jones)\sources\bin\x86\Debug\Accord.Statistics.dll
+C:\Users\Ehsan\Desktop\accord-vision-face-detection-(viola-jones)\sources\bin\x86\Debug\Accord.Vision.dll
+C:\Users\Ehsan\Desktop\accord-vision-face-detection-(viola-jones)\sources\bin\x86\Debug\AForge.dll
+C:\Users\Ehsan\Desktop\accord-vision-face-detection-(viola-jones)\sources\bin\x86\Debug\AForge.Imaging.dll
+C:\Users\Ehsan\Desktop\accord-vision-face-detection-(viola-jones)\sources\bin\x86\Debug\AForge.Math.dll
+C:\Users\Ehsan\Desktop\accord-vision-face-detection-(viola-jones)\sources\obj\x86\Debug\Face detection (Viola-Jones).csprojResolveAssemblyReference.cache
+C:\Users\Ehsan\Desktop\accord-vision-face-detection-(viola-jones)\sources\obj\x86\Debug\FaceDetection.MainForm.resources
+C:\Users\Ehsan\Desktop\accord-vision-face-detection-(viola-jones)\sources\obj\x86\Debug\FaceDetection.Properties.Resources.resources
+C:\Users\Ehsan\Desktop\accord-vision-face-detection-(viola-jones)\sources\obj\x86\Debug\Face detection (Viola-Jones).csproj.GenerateResource.Cache
+C:\Users\Ehsan\Desktop\Face Detector\sources\obj\x86\Debug\Face detection (Viola-Jones).exe
+C:\Users\Ehsan\Desktop\Face Detector\sources\obj\x86\Debug\Face detection (Viola-Jones).pdb
+C:\Users\Ehsan\Desktop\Face Detection\sources\obj\x86\Debug\Face detection (Viola-Jones).exe
+C:\Users\Ehsan\Desktop\Face Detection\sources\obj\x86\Debug\Face detection (Viola-Jones).pdb
+C:\Users\Ehsan\Desktop\Automation\Face Detection\sources\obj\x86\Debug\Face detection (Viola-Jones).exe
+C:\Users\Ehsan\Desktop\Automation\Face Detection\sources\obj\x86\Debug\Face detection (Viola-Jones).pdb

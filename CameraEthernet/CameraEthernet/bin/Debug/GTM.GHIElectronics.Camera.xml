@@ -1,0 +1,90 @@
+<?xml version="1.0"?>
+<doc>
+    <assembly>
+        <name>GTM.GHIElectronics.Camera</name>
+    </assembly>
+    <members>
+        <member name="T:Gadgeteer.Modules.GHIElectronics.Camera">
+            <summary>A Camera module for Microsoft .NET Gadgeteer</summary>
+        </member>
+        <member name="M:Gadgeteer.Modules.GHIElectronics.Camera.#ctor(System.Int32)">
+            <summary>Constructs a new instance.</summary>
+            <param name="socketNumber">The mainboard socket that has the camera module plugged into it.</param>
+        </member>
+        <member name="M:Gadgeteer.Modules.GHIElectronics.Camera.TakePicture">
+            <summary>Takes a single picture using.</summary>
+        </member>
+        <member name="M:Gadgeteer.Modules.GHIElectronics.Camera.StartStreaming">
+            <summary>Starts streaming pictures.</summary>
+        </member>
+        <member name="M:Gadgeteer.Modules.GHIElectronics.Camera.StartStreaming(Microsoft.SPOT.Bitmap)">
+            <summary>Starts streaming pictures into the provided bitmap.</summary>
+            <param name="bitmap">The bitmap to stream into. Its size must patch the selected resolution.</param>
+        </member>
+        <member name="M:Gadgeteer.Modules.GHIElectronics.Camera.StopStreaming">
+            <summary>Stops streaming the bitmaps.</summary>
+        </member>
+        <member name="E:Gadgeteer.Modules.GHIElectronics.Camera.BitmapStreamed">
+            <summary>Raised when the camera has completed streaming a bitmap.</summary>
+        </member>
+        <member name="E:Gadgeteer.Modules.GHIElectronics.Camera.PictureCaptured">
+            <summary>Raised when the camera has captured an picture.</summary>
+        </member>
+        <member name="E:Gadgeteer.Modules.GHIElectronics.Camera.CameraConnected">
+            <summary>Raised when the camera is connected.</summary>
+        </member>
+        <member name="E:Gadgeteer.Modules.GHIElectronics.Camera.CameraDisconnected">
+            <summary>Raised when the camera is disconnected.</summary>
+        </member>
+        <member name="P:Gadgeteer.Modules.GHIElectronics.Camera.CameraReady">
+            <summary>Whether or not the camera is ready to take pictures.</summary>
+        </member>
+        <member name="P:Gadgeteer.Modules.GHIElectronics.Camera.CurrentPictureResolution">
+            <summary>The resolution of the pictures to capture.</summary>
+        </member>
+        <member name="P:Gadgeteer.Modules.GHIElectronics.Camera.RestartStreamingTrigger">
+            <summary>This property is for calibration purposes. Do not change the value if not advised to.</summary>
+        </member>
+        <member name="P:Gadgeteer.Modules.GHIElectronics.Camera.TakePictureStreamTimeout">
+            <summary>How long to continue streaming for after TakePicture is called.</summary>
+        </member>
+        <member name="T:Gadgeteer.Modules.GHIElectronics.Camera.PictureCapturedEventHandler">
+            <summary>Represents the delegate that is used for the <see cref="E:Gadgeteer.Modules.GHIElectronics.Camera.PictureCaptured"/> event.</summary>
+            <param name="sender">The <see cref="T:Gadgeteer.Modules.GHIElectronics.Camera"/> object that raised the event.</param>
+            <param name="e">A <see cref="T:Gadgeteer.Picture"/> containing the captured image.</param>
+        </member>
+        <member name="T:Gadgeteer.Modules.GHIElectronics.Camera.BitmapStreamedEventHandler">
+            <summary>Represents the delegate that is used to handle the <see cref="E:Gadgeteer.Modules.GHIElectronics.Camera.BitmapStreamed"/> event.</summary>
+            <param name="sender">The <see cref="T:Gadgeteer.Modules.GHIElectronics.Camera"/> object that raised the event.</param>
+            <param name="e">A <see cref="T:Microsoft.SPOT.Bitmap"/> containing the captured image.</param>
+        </member>
+        <member name="T:Gadgeteer.Modules.GHIElectronics.Camera.CameraEventHandler">
+            <summary>Represents the delegate to handle the <see cref="E:Gadgeteer.Modules.GHIElectronics.Camera.CameraConnected"/>.</summary>
+            <param name="sender">The object that raised the event.</param>
+            <param name="e">The event arguments.</param>
+        </member>
+        <member name="T:Gadgeteer.Modules.GHIElectronics.Camera.PictureResolution">
+            <summary>The image resolutions to use when taking a picture.</summary>
+        </member>
+        <member name="F:Gadgeteer.Modules.GHIElectronics.Camera.PictureResolution.Resolution320x240">
+            <summary>A resolution of 320x240</summary>
+        </member>
+        <member name="F:Gadgeteer.Modules.GHIElectronics.Camera.PictureResolution.Resolution176x144">
+            <summary>A resolution of 176x144</summary>
+        </member>
+        <member name="F:Gadgeteer.Modules.GHIElectronics.Camera.PictureResolution.Resolution160x120">
+            <summary>A resolution of 160x120</summary>
+        </member>
+        <member name="M:Gadgeteer.Modules.GHIElectronics.Camera.PictureResolution.#ctor(System.Int32,System.Int32)">
+            <summary>Constructs a new instance.</summary>
+            <param name="width">The width in pixels.</param>
+            <param name="height">The height in pixels.</param>
+        </member>
+        <member name="P:Gadgeteer.Modules.GHIElectronics.Camera.PictureResolution.Width">
+            <summary>The width.</summary>
+        </member>
+        <member name="P:Gadgeteer.Modules.GHIElectronics.Camera.PictureResolution.Height">
+            <summary>The height.</summary>
+        </member>
+    </members>
+</doc>
